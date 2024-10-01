@@ -1,54 +1,30 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "GDP - USA",
-    "anchor": "start",
-    "subtitle": "Current prices, $bn | FRED through ECO API",
-    "fontSize": 14,
-    "subtitleFontSize": 12,
-    "color": "#da1818",
-    "subtitleColor": "#000000"
-  },
-  "height": 250,
-  "width": "container",
-  "autosize": {
-    "type": "fit",
-    "contains": "padding"
-  },
-  "background": "#ffffff",
-  "view": {
-    "fill": "#ffffff",
-    "strokeOpacity": 0
-  },
+ 
+  "title": {"text": "GDP Per Capita"},
+ 
+  "width": 400,
+  "height": 300,
+   
   "data": {
-    "url": "https://api.economicsobservatory.com/usa/gdp?vega",
-    "format": {
-      "type": "json"
-    }
+    "values": [
+        {"Country": "China","GDP per capita": 21482},
+        {"Country": "DR Congo.","GDP per capita": 1337},
+        {"Country": "UK","GDP per capita": 54929},
+        {"Country": "India","GDP per capita": 8400},
+        {"Country": "Nigeria","GDP per capita": 5862},
+        {"Country": "USA","GDP per capita": 76329}]
   },
+ 
   "mark": {
-    "type": "line",
-    "color": "#e2ac19",
-    "strokeWidth": 2
-  },
+    "type": "bar",
+    "color": "red"},
+ 
   "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal",
-      "axis": {
-        "title": "",
-        "titleColor": "#122B39",
-        "grid": true
-      }
-    },
+    "x": {"field": "Country"},  
+ 
     "y": {
-      "field": "value",
-      "type": "quantitative",
-      "axis": {
-        "title": "",
-        "titleColor": "#122B39",
-        "grid": true
-      }
-    }
-  }
+      "field": "GDP per capita",
+      "type": "quantitative"}}
 }
+ 
