@@ -1,0 +1,27 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+       "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/productivityIndexGbrOns.csv"},
+
+    "title": {"text": "UK Productivity",
+    "subtitle":["Output per worker, seasonally adjusted, 2019=100","Scorce:ONS"]
+    },
+
+    "width":300,
+    "height":300,
+
+    "mark":{"type": "line","color":"red"},
+ 
+    "encoding": {
+      "x": {"field": "date",
+      "axis":{
+        "grid": false
+      },
+      "title":"",
+      "type": "temporal"},
+
+      "y": {"field": "value",
+      "title":"",
+      "type": "quantitative"}
+    }
+}
