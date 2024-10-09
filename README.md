@@ -1,4 +1,4 @@
-TheoLam00.github.io
+[My Github page](TheoLam00.github.io)
 <H1>Pratical data science for economist</H1>
 <p>This is to record the learning progress to make a live website taking data from the web to create charts to comment on ecomomics data</p>
 
