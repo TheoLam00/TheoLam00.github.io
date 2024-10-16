@@ -1,9 +1,9 @@
-<!--[My Github page](TheoLam00.github.io)-->
-<H1>Pratical data science for economist</H1>
+<link rel="stylesheet" type="text/css" href="index.css">
+<h1>Pratical data science for economist</h1>
 <p>This is to record the learning progress to make a live website taking data from the web to create charts to comment on ecomomics data</p>
 
-<H3>Part 1: Coding Challenges</H3>
+<h3>Part 1: Coding Challenges</h3>
 <p></p>
 
-<H3>Part 2: Data Project</H3>
+<h3>Part 2: Data Project</h3>
 <p></p>
