@@ -5,7 +5,10 @@
   "transform": [
     {"filter":{"field": "gender", "equal": "All"}}
   ],
-  "mark": "line",
+  "mark": {
+    "type":"line",
+    "strokeWidth":2
+  },
   "title":{
     "text":"Entry rate into higher education",
     "subtitle":"Source: gov.uk"
@@ -13,6 +16,10 @@
   "encoding": {
     "x": {"field": "time", "type": "temporal","title":""},
     "y": {"field": "value", "type": "quantitative", "title":"percentage"},
-    "color": {"field": "ethnicity", "type": "nominal"}
+    "color": {"field": "ethnicity", "type": "nominal"},
+    "tooltip":[
+      {"field":"ethnicity"},
+      {"field":"value","title":"percentage"}
+    ]
   }
 }
