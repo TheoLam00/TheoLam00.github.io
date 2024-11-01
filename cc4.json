@@ -24,7 +24,7 @@
   "mark": "line",
   "encoding": {
     "x": {
-      "field": "month",
+      "field": "month"
     },
     "y": {
       "field": "value", 
