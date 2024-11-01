@@ -57,29 +57,36 @@
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
         <div class="chart-description">
-            <h2>Section 1: A basic chart</h2>
+            <h2>Section 1: A basic chart examples</h2>
             <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
                 We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
                 As a first example, we're using a basic chart from our repo.
             </p>
         </div>
         <figure id="Example"></figure>
+        <h2>Section 2: Coding Challenges</h2>
         <h3>
-            Week 1: Showing other's visualisation
+            CC 1: Hosting a live website. Showing other's visualisation
         </h3>
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
         <figure id="Location2"></figure>
         
         <h3>
-            Week 2: Building charts with economics observatory's data
+            CC 2: Building my own charts with economics observatory's data
         </h3>
         <figure id="Location3"></figure>
         <figure id="Location4"></figure>
         <h3>
-            Week 3: Cleaning data from ONS and create chart
+            CC 3: Comment on economics festival topic
         </h3>
         <figure id="Location5"></figure>
-        
+        <figure id="Location6"></figure>
+        <p>The data from ONS and gov.uk shows that black ethnic groups are not significantly being bullied more or having less entry rate to higher education</p>
+        <h3>
+            CC4: Improving a misleading chart
+        </h3>
+        <img src="cc4.jpg" height="405" width="720">
+        <figure id="Location7"></figure>
     </section>
 
     <!-- Do you want to add more sections? -->
@@ -97,6 +104,8 @@
         let wk2_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/wk2_1.json";
         let wk2_2 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/wk2_2.json";
         let wk3_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc3_1.json";
+        let wk3_2 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc3_2.json";
+        let cc4 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc4.json";
         
         vegaEmbed('#Example',example_fig);
         vegaEmbed('#Location1', figure_1); // We're using the vegaEmbed function to put a graph in the element with id figure_1
@@ -104,6 +113,8 @@
         vegaEmbed('#Location3', wk2_1);
         vegaEmbed('#Location4', wk2_2);
         vegaEmbed('#Location5', wk3_1);
+        vegaEmbed('#Location6', wk3_2);
+        vegaEmbed('#Location7', cc4);
 
         // Do you want to add more graphs?
         // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
