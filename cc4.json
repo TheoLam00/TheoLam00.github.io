@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Edited graph",
   "title":{
     "text":"Unemployment rate USA, 2011",
     "subtitle":"Source: Bureau of labour statistics"
