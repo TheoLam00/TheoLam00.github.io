@@ -63,8 +63,9 @@
 
         <h3>CC5</h3>
         <p>The data was cleaned using code in <a href="https://colab.research.google.com/drive/17wqWVcgpmluVgFwd28leCk65gIx5hLsm#scrollTo=UIMhhtD1IuIG">google colab python notebook</a></p>
-        <p></p>
-        
+        <figure id="CC5"></figure>
+        <p>World Bank have data of different countries in the world in same format. So it will be easier to compare data of countries</p>
+
         <h3>CC6</h3>
 
         <h3>CC7</h3>
@@ -83,15 +84,8 @@
         <p></p>
     </section>
 
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
-
-
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
     <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
+        // This is a comment in JavaScript - it's a different language to HTML and CSS cc1-4
         let example_fig = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json";
         let figure_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/wk1_chart1.json"; // We're storing the URL of the graph we want to display in a variable                                                                                                      // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
         let figure_2 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/wk1_chart2.json";
@@ -109,14 +103,9 @@
         vegaEmbed('#Location5', wk3_1);
         vegaEmbed('#Location6', wk3_2);
         vegaEmbed('#Location7', cc4);
-
-        // Do you want to add more graphs?
-        // try defining a new variable for figure_3_spec, adding VegaEmbed for Location3, and adding a new section in the HTML
-        // e.g. 
-        // let figure_3_spec = ...
-        // vegaEmbed('#Location3', figure_3_spec)
-
-
+        //cc5
+        let cc5 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc5.json";
+        vegaEmbed('#CC5', cc5);
     </script>
 
 </body>
