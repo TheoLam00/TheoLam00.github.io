@@ -4,7 +4,7 @@ body {
   color: #333;
   line-height: 1.6;
   /* we want a white page, that's centered and not too wide */
-  background-color: #fff;
+  background-color: #ebebea;
   margin:0 auto;
   max-width: 800px;
   padding-top: 60px;
@@ -50,10 +50,36 @@ a {
 
 a:hover {
   text-decoration: underline;
+  color: rgb(48, 3, 132);
 }
   
 /* Images */
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Box */
+.box {
+  background-color: #d4d2d2;
+
+  display:inline-block;
+  justify-content: center;
+  
+  border-radius: 10px;
+  
+  padding: 5px;
+  margin:5px;
+}
+
+.box:hover {
+  background-color: #c3c1c1;
+}
+
+/* Graphs */
+.graph {
+  background-color: #f1f0f0;
+  border-radius: 10px;
+  padding: 5px;
+  margin:5px;
 }
