@@ -1,0 +1,17 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Google's stock price over time.",
+  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cleanedCc5.csv"},
+  "mark": "line",
+  "title":{"text":"Life expectancy at birth",
+            "subtitle":"Source: World Bank"},
+  "encoding": {
+    "x": {"field": "variable", 
+          "type": "temporal",
+          "title":"Year"},
+    "y": {"field": "value", 
+          "type": "quantitative", 
+          "scale":{"domain":[0,100]},
+          "title":"Age"}
+  }
+}
