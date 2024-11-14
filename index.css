@@ -101,6 +101,7 @@ img {
 
 .expandButton:hover {
   background-color: #c3c1c1;
+  transform: scale(105%);
 }
 
 .figButton {
@@ -110,4 +111,38 @@ img {
   margin: 2px;
   max-width: 100%;
   max-height: 80%;
+}
+
+/*collaspeButton*/
+.collaspeButton{
+  background-color: #d96969;
+  justify-content: center;
+  
+  border-radius: 8px;
+  
+  padding: 5px;
+  margin:5px;
+  box-shadow: #333;
+}
+
+.collaspeButton:active{
+  transform: translateY(4px);
+  background-color: #c76161;
+}
+
+/*Show button*/
+.showButton{
+  background-color: #bda0fc;
+
+  display:inline-block;
+  justify-content: center;
+  
+  border-radius: 10px;
+  
+  padding: 5px;
+  margin:5px;
+}
+
+.showButton:hover{
+  transform: translateY(-4px);
 }
