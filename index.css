@@ -74,10 +74,6 @@ img {
   display: none;
 }
 
-.box:hover {
-  background-color: #c3c1c1;
-}
-
 .box:target{
   display: block;
 }
@@ -101,17 +97,20 @@ img {
   
   padding: 5px;
   margin:5px;
+
+  width: 400px;
+  height: 400px;
 }
 
 .expandButton:hover {
   background-color: #c3c1c1;
 }
 
-.figButton{
+.figButton {
   background-color: #f1f0f0;
   border-radius: 10px;
   padding: 2px;
   margin: 2px;
-  width: auto;
-  height: auto;
+  max-width: fit-content;
+  max-height: fit-content;
 }
