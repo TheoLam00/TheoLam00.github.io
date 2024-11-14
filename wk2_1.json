@@ -9,7 +9,8 @@
     "color": "#da1818",
     "subtitleColor": "#000000"
   },
-  "autosize": {"type": "fit", "contains": "padding"},
+  "width":"container",
+  "height":"container",
   "background": "#ffffff",
   "view": {"fill": "#ffffff", "strokeOpacity": 0},
   "data": {
