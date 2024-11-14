@@ -4,13 +4,13 @@
     "text": "Inequality",
     "anchor": "start",
     "subtitle": "Gini coefficient, Disposable income | Source: FRED through ECO API",
-    "fontSize": "14",
-    "subtitleFontSize": "12",
+    "fontSize": 14,
+    "subtitleFontSize": 12,
     "color": "#000000",
     "subtitleColor": "#000000"
   },
-  "height": 250,
-  "width": 400,
+  "height": "container",
+  "width": "container",
   "autosize": {
     "type": "fit",
     "contains": "padding"
@@ -29,7 +29,7 @@
   "mark": {
     "type": "line",
     "color": "#f4134d",
-    "strokeWidth": "2"
+    "strokeWidth": 2
   },
   "encoding": {
     "x": {
