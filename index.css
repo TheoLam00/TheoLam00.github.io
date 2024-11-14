@@ -6,7 +6,7 @@ body {
   /* we want a white page, that's centered and not too wide */
   background-color: #ebebea;
   margin:0 auto;
-  max-width: 800px;
+  max-width: 80%;
   padding-top: 60px;
 }
 
@@ -70,10 +70,16 @@ img {
   
   padding: 5px;
   margin:5px;
+
+  display: none;
 }
 
 .box:hover {
   background-color: #c3c1c1;
+}
+
+.box:target{
+  display: block;
 }
 
 /* Graphs */
@@ -81,5 +87,31 @@ img {
   background-color: #f1f0f0;
   border-radius: 10px;
   padding: 5px;
+  margin: 5px;
+}
+
+/*Expand Button*/
+.expandButton{
+  background-color: #d4d2d2;
+
+  display:inline-block;
+  justify-content: center;
+  
+  border-radius: 10px;
+  
+  padding: 5px;
   margin:5px;
+}
+
+.expandButton:hover {
+  background-color: #c3c1c1;
+}
+
+.figButton{
+  background-color: #f1f0f0;
+  border-radius: 10px;
+  padding: 2px;
+  margin: 2px;
+  width: auto;
+  height: auto;
 }

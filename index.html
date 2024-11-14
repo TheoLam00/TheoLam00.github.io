@@ -45,68 +45,81 @@
 
     <section id = "CC">
         <h2>Section 2: Coding Challenges</h2>
+        <button type="button" class="showButton" onclick="showAll()">Show all</button>
+        <button type="button" class="showButton" onclick="hideAll()">Hide all</button>
+        <br>
         <!--CC1-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(1)"><h3>CC1</h3><figure id="figButton1" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(1)">
             <h3>CC 1: Hosting. Display charts in your own site.</h3>
             <figure id="Location1" class = "graph"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
             <figure id="Location2" class = "graph"></figure> 
-        </div>
+        </button>
 
         <!--CC2-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(2)"><h3>CC2</h3><figure id="figButton2" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(2)">
             <h3>CC 2: Building. Create your own visualisations</h3>
             <figure id="Location3" class = "graph"></figure>
             <figure id="Location4" class = "graph"></figure>
-        </div>
+        </button>
 
         <!--CC3-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(3)"><h3>CC3</h3><figure id="figButton3" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(3)">
             <h3>CC 3: Debating. Use a visualisation in economic/policy commentary</h3>
             <figure id="Location5" class = "graph"></figure>
             <figure id="Location6" class = "graph"></figure>
             <p>The data from ONS and gov.uk shows that black ethnic groups are not significantly being bullied more or having less entry rate to higher education</p>
-        </div>
+        </button>
 
         <!--CC4-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(4)"><h3>CC4</h3><figure id="figButton4" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(4)">
             <h3>CC4:  Replication. Re-create, then improve, someone else chart</h3>
             <img src="cc4.jpg" height="405" width="720">
             <figure id="Location7" class = "graph"></figure>
             <p>The graph y-axis is now starting from zero and the drop in November is more obvious than other months as in the data</p>
-        </div>
+        </button>
 
         <!--CC5-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(5)"><h3>CC5</h3><figure id="figButton5" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(5)">
             <h3>CC5: Scraper. Implement a data scraper of your own.</h3>
             <p>The data was cleaned using code in <a href="https://colab.research.google.com/drive/17wqWVcgpmluVgFwd28leCk65gIx5hLsm#scrollTo=UIMhhtD1IuIG">google colab python notebook</a></p>
             <figure id="CC5" class = "graph"></figure>
             <p>World Bank have data of different countries in the world in same format. So it will be easier to compare data of countries</p>
-        </div>
+        </button>
 
         <!--CC6-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(6)"><h3>CC6</h3><figure id="figButton6" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(6)">
             <h3>CC6: Loops. Build a dashboard.</h3>
-        </div>
+        </button>
 
         <!--CC7-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(7)"><h3>CC7</h3><figure id="figButton7" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(7)">
             <h3>CC7: Maps. Base maps and choropleths.</h3>
-        </div>
+        </button>
 
         <!--CC8-->
-        <div class = "box">
-            <h3>CC8: CC8. Analytics charts.</h3>
-        </div>
+        <button type="button" class="expandButton" onclick="show(8)"><h3>CC8</h3><figure id="figButton8" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(8)">
+            <h3>CC8: Analytics charts.</h3>
+        </button>
 
         <!--CC9-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(9)"><h3>CC9</h3><figure id="figButton9" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(9)">
             <h3>CC9: Big Data. Extracting a story from millions of prices.</h3>
-        </div>
+        </button>
 
         <!--CC10-->
-        <div class = "box">
+        <button type="button" class="expandButton" onclick="show(10)"><h3>CC10</h3><figure id="figButton10" class="figButton"></figure></button>
+        <button type="button" class = "box" onclick="hide(10)">
             <h3>CC10</h3>
-        </div>
+        </button>
     </section>
 
     <section id = "Project">
@@ -137,6 +150,51 @@
         //cc5
         let cc5 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc5.json";
         vegaEmbed('#CC5', cc5);
+
+        function showAll(){
+            var show = document.querySelectorAll(".box");
+            var but = document.querySelectorAll(".expandButton");
+            for (let i=0;i<show.length;i++){
+                show[i].style.display = "block";
+                but[i].style.display = "none";
+            }
+        }
+
+        function show(i){
+            var show = document.querySelectorAll(".box");
+            var but = document.querySelectorAll(".expandButton");
+            show[i-1].style.display = "block";
+            but[i-1].style.display = "none";
+        }
+
+        function hideAll(){
+            var show = document.querySelectorAll(".box");
+            var but = document.querySelectorAll(".expandButton");
+            for (let i=0;i<show.length;i++){
+                show[i].style.display = "none";
+                but[i].style.display = "block";
+            }
+        }
+
+        function hide(i){
+            var show = document.querySelectorAll(".box");
+            var but = document.querySelectorAll(".expandButton");
+            show[i-1].style.display = "none";
+            but[i-1].style.display = "block";
+        }
+        
+        //testing expand button
+        let test = cc5;
+        vegaEmbed('#figButton1', test);
+        vegaEmbed('#figButton2', test);
+        vegaEmbed('#figButton3', test);
+        vegaEmbed('#figButton4', test);
+        vegaEmbed('#figButton5', test);
+        vegaEmbed('#figButton6', test);
+        vegaEmbed('#figButton7', test);
+        vegaEmbed('#figButton8', test);
+        vegaEmbed('#figButton9', test);
+        vegaEmbed('#figButton10', test);
     </script>
 
 </body>
