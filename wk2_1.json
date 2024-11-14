@@ -9,8 +9,8 @@
     "color": "#da1818",
     "subtitleColor": "#000000"
   },
-  "width":"container",
-  "height":"container",
+  "width": 350,
+  "height": 350,
   "background": "#ffffff",
   "view": {"fill": "#ffffff", "strokeOpacity": 0},
   "data": {
