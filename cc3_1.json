@@ -2,8 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Stock prices of 5 Tech Companies over Time.",
   "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc3_higher-education.csv"},
-  "height" :"container",
-  "width":"container",
+  "autosize": {"type": "fit", "contains": "padding"},
   "transform": [
     {"filter":{"field": "gender", "equal": "All"}}
   ],

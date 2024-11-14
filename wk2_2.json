@@ -9,12 +9,7 @@
     "color": "#000000",
     "subtitleColor": "#000000"
   },
-  "height": "container",
-  "width": "container",
-  "autosize": {
-    "type": "fit",
-    "contains": "padding"
-  },
+  "autosize": {"type": "fit", "contains": "padding"},
   "background": "#ffffff",
   "view": {
     "fill": "#ffffff",
