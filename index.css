@@ -84,6 +84,9 @@ img {
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
+
+  width: 50%;
+  height: 300px;
 }
 
 /*Expand Button*/
@@ -111,6 +114,6 @@ img {
   border-radius: 10px;
   padding: 2px;
   margin: 2px;
-  max-width: fit-content;
-  max-height: fit-content;
+  width: 80%;
+  height: 80%;
 }
