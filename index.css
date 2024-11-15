@@ -1,10 +1,9 @@
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #333;
+  color: var(--text);
   line-height: 1.6;
-  /* we want a white page, that's centered and not too wide */
-  background-color: #ebebea;
+  background-color: #ebd8ad;
   margin:0 auto;
   max-width: 80%;
   padding-top: 60px;
@@ -40,17 +39,19 @@ p {
 
 section {
   margin-bottom: 2.5em;  /* We want a little more space between sections */
+  background-color: var(--bg-main);
+  border-radius: 10px;
 }
 
 /* Links */
 a {
-  color: #065f46;
+  color: var(--a);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: rgb(48, 3, 132);
+  color: var(--a-hover);
 }
   
 /* Images */
@@ -61,7 +62,7 @@ img {
 
 /* Box */
 .box {
-  background-color: #d4d2d2;
+  background-color: var(--bg-box);
 
   display:inline-block;
   justify-content: center;
@@ -80,7 +81,7 @@ img {
 
 /* Graphs */
 .graph {
-  background-color: #f1f0f0;
+  background-color: var(--bg-graph);
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
@@ -88,7 +89,7 @@ img {
 
 /*Expand Button*/
 .expandButton{
-  background-color: #d4d2d2;
+  background-color: var(--bg-exBut);
 
   display:inline-block;
   justify-content: center;
@@ -100,7 +101,7 @@ img {
 }
 
 .expandButton:hover {
-  background-color: #c3c1c1;
+  background-color: var(--bg-exBut-hover);
   transform: scale(105%);
 }
 
@@ -115,7 +116,7 @@ img {
 
 /*collaspeButton*/
 .collaspeButton{
-  background-color: #d96969;
+  background-color: var(--bg-colBut);
   justify-content: center;
   
   border-radius: 8px;
@@ -127,12 +128,12 @@ img {
 
 .collaspeButton:active{
   transform: translateY(4px);
-  background-color: #c76161;
+  background-color: var(--bg-colBut-press);
 }
 
 /*Show button*/
 .showButton{
-  background-color: #bda0fc;
+  background-color: #CCDAD1;
 
   display:inline-block;
   justify-content: center;
@@ -145,4 +146,30 @@ img {
 
 .showButton:hover{
   transform: translateY(-4px);
+}
+
+/*color theme*/
+.colorTop{
+  --bg-main: #F4ECD6;
+  --text:#333;
+  --a:#4b5451;
+  --a-hover:#283845;
+}
+
+.colorCC{
+  --bg-main: #F4ECD6;
+  --text:#333;
+  --a:#065f46;
+  --a-hover:rgb(48, 3, 132);
+  --bg-box:#B8B08D;
+  --bg-graph:#f1f0f0;
+  --bg-exBut:#B8B08D;
+  --bg-exBut-hover:#a19a7d;
+  --bg-colBut:#c5d9d9;
+  --bg-colBut-press:#92a2a2;
+} 
+
+.colorProj{
+  --bg-main: #F4ECD6;
+  --text:#333;
 }
