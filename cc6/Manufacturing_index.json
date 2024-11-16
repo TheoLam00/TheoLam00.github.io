@@ -3,7 +3,7 @@
   "title": {
     "text": "Manufacturing-index",
     "anchor": "start",
-    "subtitle": "Source: ONS",
+    "subtitle": "Source: ONS    base year=100",
     "fontSize": 14,
     "subtitleFontSize": 12,
     "color": "#da1818",
