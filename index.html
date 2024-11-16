@@ -98,7 +98,15 @@
         <div class="box">
         <button type="button" onclick="hide(6)" class="collaspeButton"><h3>CC6: Loops. Build a dashboard.</h3></button><br>
         <p>The JSON files were downloaded using this <a href="https://colab.research.google.com/github/TheoLam00/TheoLam00.github.io/blob/main/cc6/CC6.ipynb">code</a></p>
-        <p></p>
+        <figure id="cc6-1" class="graph"></figure>
+        <figure id="cc6-2" class="graph"></figure>
+        <figure id="cc6-3" class="graph"></figure>
+        <figure id="cc6-4" class="graph"></figure>
+        <figure id="cc6-5" class="graph"></figure>
+        <figure id="cc6-6" class="graph"></figure>
+        <figure id="cc6-7" class="graph"></figure>
+        <figure id="cc6-8" class="graph"></figure>
+        <figure id="cc6-9" class="graph"></figure>
         </div>
 
         <!--CC7-->
@@ -154,6 +162,27 @@
         //cc5
         let cc5 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc5/cc5.json";
         vegaEmbed('#CC5', cc5);
+        //cc6
+        let cc6_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Manufacturing_index.json";
+        let cc6_2 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/female_unemployment.json";
+        let cc6_3 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Manufacturing_index.json";
+        let cc6_4 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Manufacturing_index.json";
+        let cc6_5 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Manufacturing_index.json";
+        let cc6_6 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Manufacturing_index.json";
+        let cc6_7 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Manufacturing_index.json";
+        let cc6_8 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Manufacturing_index.json";
+        let cc6_9 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Manufacturing_index.json";
+
+        vegaEmbed('#cc6-1', cc6_1);
+        vegaEmbed('#cc6-2', cc6_2);
+        vegaEmbed('#cc6-3', cc6_3);
+        vegaEmbed('#cc6-4', cc6_4);
+        vegaEmbed('#cc6-5', cc6_5);
+        vegaEmbed('#cc6-6', cc6_6);
+        vegaEmbed('#cc6-7', cc6_7);
+        vegaEmbed('#cc6-8', cc6_8);
+        vegaEmbed('#cc6-9', cc6_9);
+
 
         //expand button
         vegaEmbed('#figButton1', figure_1);
@@ -161,8 +190,8 @@
         vegaEmbed('#figButton3', wk3_1);
         vegaEmbed('#figButton4', cc4);
         vegaEmbed('#figButton5', cc5);
+        vegaEmbed('#figButton6', cc6_1);
         let test = figure_1;
-        vegaEmbed('#figButton6', test);
         vegaEmbed('#figButton7', test);
         vegaEmbed('#figButton8', test);
         vegaEmbed('#figButton9', test);
