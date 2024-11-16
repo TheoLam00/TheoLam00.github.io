@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Manufacturing-index",
+    "text": "service output",
     "anchor": "start",
     "subtitle": "Source: ONS    base year=100",
     "fontSize": 14,
@@ -14,7 +14,7 @@
   "background": "#ffffff",
   "view": {"fill": "#ffffff", "strokeOpacity": 0},
   "data": {
-    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Data-ONS-Manufacturing_index.json",
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Data-ONS-service_output.json",
     "format": {"type": "json", "property": "years"}
   },
   "mark": {"type": "line", "color": "#e2ac19", "strokeWidth": 2},

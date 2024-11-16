@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Manufacturing-index",
+    "text": "inflation",
     "anchor": "start",
-    "subtitle": "Source: ONS    base year=100",
+    "subtitle": "Source: ONS",
     "fontSize": 14,
     "subtitleFontSize": 12,
     "color": "#da1818",
@@ -14,13 +14,18 @@
   "background": "#ffffff",
   "view": {"fill": "#ffffff", "strokeOpacity": 0},
   "data": {
-    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Data-ONS-Manufacturing_index.json",
-    "format": {"type": "json", "property": "years"}
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Data-ONS-inflation.json",
+    "format": {"type": "json", "property": "quarters"}
   },
+  "transform": [
+    {"calculate": "datum.quarter=='Q1'?datum.year+'-01-01':datum.quarter=='Q2'?datum.year+'-04-01':datum.quarter=='Q3'?datum.year+'-07-01':datum.quarter=='Q4'?datum.year+'-10-01':'datum.date'",
+    "as": "date"},
+    {"calculate": "datetime(datum.date)", "as": "time"}
+    ],
   "mark": {"type": "line", "color": "#e2ac19", "strokeWidth": 2},
   "encoding": {
     "x": {
-      "field": "date",
+      "field": "time",
       "type": "temporal",
       "axis": {"title": "", "titleColor": "#122B39", "grid": true}
     },

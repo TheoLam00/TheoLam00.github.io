@@ -1,9 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Manufacturing-index",
+    "text": "population",
     "anchor": "start",
-    "subtitle": "Source: ONS    base year=100",
+    "subtitle": "Source: ONS",
     "fontSize": 14,
     "subtitleFontSize": 12,
     "color": "#da1818",
@@ -14,9 +14,10 @@
   "background": "#ffffff",
   "view": {"fill": "#ffffff", "strokeOpacity": 0},
   "data": {
-    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Data-ONS-Manufacturing_index.json",
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc6/Data-ONS-population.json",
     "format": {"type": "json", "property": "years"}
   },
+  "transform": [{"calculate": "datum.value/1000000", "as": "pop"}],
   "mark": {"type": "line", "color": "#e2ac19", "strokeWidth": 2},
   "encoding": {
     "x": {
@@ -25,9 +26,9 @@
       "axis": {"title": "", "titleColor": "#122B39", "grid": true}
     },
     "y": {
-      "field": "value",
+      "field": "pop",
       "type": "quantitative",
-      "axis": {"title": "", "titleColor": "#122B39", "grid": true}
+      "axis": {"title": "Population (million)", "titleColor": "#122B39", "grid": true}
     }
   }
 }
