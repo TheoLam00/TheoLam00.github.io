@@ -113,6 +113,7 @@
         <button type="button" class="expandButton" onclick="show(7)"><h3>CC7</h3><figure id="figButton7" class="figButton"></figure></button>
         <div class="box">
         <button type="button" onclick="hide(7)" class="collaspeButton"><h3>CC7: Maps. Base maps and choropleths.</h3></button><br>
+        <figure id="cc7-1" class="graph"></figure>
         </div>
 
         <!--CC8-->
@@ -183,6 +184,9 @@
         vegaEmbed('#cc6-8', cc6_8);
         vegaEmbed('#cc6-9', cc6_9);
 
+        //cc7
+        let cc7_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc7/USmap.json";
+        vegaEmbed('#cc7-1', cc7_1);
 
         //expand button
         vegaEmbed('#figButton1', figure_1);
@@ -191,8 +195,9 @@
         vegaEmbed('#figButton4', cc4);
         vegaEmbed('#figButton5', cc5);
         vegaEmbed('#figButton6', cc6_1);
+        vegaEmbed('#figButton7', cc7_1);
+
         let test = figure_1;
-        vegaEmbed('#figButton7', test);
         vegaEmbed('#figButton8', test);
         vegaEmbed('#figButton9', test);
         vegaEmbed('#figButton10', test);
