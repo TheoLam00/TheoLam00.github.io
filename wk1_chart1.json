@@ -3,8 +3,7 @@
  
   "title": {"text": "GDP Per Capita"},
  
-  "width": 350,
-  "height": 350,
+  "autosize":"fit-x",
    
   "data": {
     "values": [

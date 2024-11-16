@@ -98,6 +98,9 @@ img {
   
   padding: 5px;
   margin:5px;
+
+  width: 30%;
+  height: auto;
 }
 
 .expandButton:hover {

@@ -2,8 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc3_bullying.csv"},
   "transform": [{"filter":{"field":"type","oneOf":["Apr 2019 to Mar 2020","Apr 2022 to Mar 2023"]}}],
-  "width": 350,
-  "height": 350,
+  "autosize":"fit-x",
   "title":{
     "text":"Online bullying in UK by ethnics",
     "subtitle":"Source: ONS"

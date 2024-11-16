@@ -4,8 +4,7 @@
     "text":"Unemployment rate USA, 2011",
     "subtitle":"Source: Bureau of labour statistics"
   },
-  "width": 350,
-  "height": 350,
+  "autosize":"fit-x",
   "data": {
     "values":[
       {"month":1,"value":9.0},
