@@ -100,7 +100,12 @@
             "title":null,
             "orient": "right",
             "direction": "vertical"},
-        "type": "quantitative"},
+        "type": "quantitative",
+        "scale":{
+          "domainMax":17,
+          "domainMin":0
+        }
+        },
       "tooltip":{
         "field":"Value"
       } 
