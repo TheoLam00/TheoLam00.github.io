@@ -106,8 +106,9 @@
           "domainMin":0
         }
         },
-      "tooltip":{
-        "field":"Value"
-      } 
+      "tooltip":[
+        {"field":"Value"},
+        {"field":"date"}
+      ]
     }
   }
