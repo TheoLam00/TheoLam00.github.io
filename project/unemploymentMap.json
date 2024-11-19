@@ -15,7 +15,8 @@
          "min": 1976, 
          "max": 2023, 
          "step": 1,
-         "name": "Year:"}}],    
+         "name": "Year:"}}
+         ],    
   
     "projection": {"type": "albersUsa"},
     "mark": "geoshape", 
@@ -93,12 +94,15 @@
                     "geometry"]}}],
       
     "encoding":{
-          "color":{
-            "field":"Value",
-            "legend":{
-                "title":null,
-                "orient": "right",
-                "direction": "vertical"},
-            "type": "quantitative"}
+      "color":{
+        "field":"Value",
+        "legend":{
+            "title":null,
+            "orient": "right",
+            "direction": "vertical"},
+        "type": "quantitative"},
+      "tooltip":{
+        "field":"Value"
+      } 
     }
   }
