@@ -142,6 +142,7 @@
         <h2>Data Profolio</h2>
         <h1 class="big">Voting Behaviour in US</h1>
         <p></p>
+        <figure id="unemployment" class="graph"></figure>
     </section>
 
     <script>
@@ -238,6 +239,10 @@
             show[i-1].style.display = "none";
             but[i-1].style.display = "inline-block";
         }
+
+        //project graph
+        let unemployment = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unemploymentMap.json";
+        vegaEmbed('#unemployment',unemployment);
     </script>
 
 </body>
