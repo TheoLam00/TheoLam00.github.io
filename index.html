@@ -214,6 +214,7 @@
             for (let i=0;i<show.length;i++){
                 but[i].style.display = "none";
                 show[i].style.display = "block";
+                containerBug();
             }
         }
 
@@ -222,6 +223,7 @@
             var but = document.querySelectorAll(".expandButton");
             but[i-1].style.display = "none";
             show[i-1].style.display = "block";
+            containerBug();
         }
 
         function hideAll(){
@@ -230,6 +232,7 @@
             for (let i=0;i<show.length;i++){
                 show[i].style.display = "none";
                 but[i].style.display = "inline-block";
+                containerBug();
             }
         }
 
@@ -238,6 +241,12 @@
             var but = document.querySelectorAll(".expandButton");
             show[i-1].style.display = "none";
             but[i-1].style.display = "inline-block";
+            containerBug();
+        }
+
+        //To fix the graph size to container not showing bug
+        function containerBug(){
+            window.dispatchEvent(new Event('resize'));
         }
 
         //project graph

@@ -56,8 +56,8 @@ a:hover {
   
 /* Images */
 img {
-  max-width: 100%;
-  height: auto;
+  width: 600px;
+  height: 400px;
 }
 
 /* Box */
@@ -79,14 +79,15 @@ img {
   display: block;
 }
 
-/* Graphs */
+/* Graphs after expand*/
 .graph {
-  background-color: var(--bg-graph);
+  background-color: #f1f0f0;
   border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
+  padding: 2px;
+  margin: 2px;
+
   height: 400px;
-  width: 400px;
+  width: 600px;
   align-items: center;
   justify-content: center;
 }
