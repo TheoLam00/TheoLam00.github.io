@@ -87,6 +87,8 @@ img {
   margin: 5px;
   height: 400px;
   width: 400px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Expand Button*/
