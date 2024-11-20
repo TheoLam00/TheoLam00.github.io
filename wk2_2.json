@@ -9,8 +9,8 @@
     "color": "#000000",
     "subtitleColor": "#000000"
   },
-  "height": 300,
-  "width": 400,
+  "height": "container",
+  "width": "container",
   "background": "#ffffff",
   "view": {
     "fill": "#ffffff",
