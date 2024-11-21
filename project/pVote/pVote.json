@@ -27,7 +27,7 @@
   "projection": {"type": "albersUsa"},
   "mark": "geoshape",
   "data": {
-    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/pVoteDemRatio.csv",
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/pVote/pVoteDemRatio.csv",
     "format": {"type": "csv"}
   },
   "transform": [
