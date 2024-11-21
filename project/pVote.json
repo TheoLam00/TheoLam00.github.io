@@ -18,7 +18,11 @@
         "step": 4,
         "name": "Year:"
       }
-    }
+    },
+    {
+      "name": "ShowPercentage",
+      "value":false,
+      "bind": {"input": "checkbox"}}
   ],
   "projection": {"type": "albersUsa"},
   "mark": "geoshape",
@@ -96,7 +100,10 @@
         "fields": ["properties", "type", "geometry"]
       }
     },
-    {"calculate": "datum.Value*100","as": "democrats_percentage"}
+    {"calculate": "datum.Value*100", "as": "democrats_percentage"},
+    {"calculate": "datum.Value>0.5?'Democrats':'Republicants'","as": "party"},
+    {"calculate": "ShowPercentage","as": "show"},
+    {"calculate": "datum.show?datum.Value:datum.party=='Democrats'?1:0","as": "Value"}
   ],
   "encoding": {
     "color": {
@@ -104,10 +111,16 @@
       "legend": {"title": null, "orient": "right", "direction": "vertical"},
       "type": "quantitative",
       "scale": {
-        "domainMax": 1, "domainMin": 0,
-        "range":["#C51007","#FFFFFF","#1307C5"]
+        "domainMax": 1,
+        "domainMin": 0,
+        "range": ["#C51007", "#FFFFFF", "#1307C5"]
       }
     },
-    "tooltip": [{"field": "democrats_percentage"}, {"field": "year"},{"field":"State"}]
+    "tooltip": [
+      {"field": "democrats_percentage"},
+      {"field": "year"},
+      {"field": "State"},
+      {"field":"party"}
+    ]
   }
 }
