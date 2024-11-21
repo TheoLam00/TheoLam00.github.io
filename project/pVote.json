@@ -3,16 +3,19 @@
   "width": "container",
   "height": "container",
   "view": {"stroke": "transparent"},
-  "title": {"text": "Unemployment Rate"},
+  "title": {
+    "text": "Unemployment Rate",
+    "subtitle": "Source: Federal Reserve Bank of St. Louis"
+  },
   "params": [
     {
       "name": "yearSelector",
-      "value": 1,
+      "value": 1976,
       "bind": {
         "input": "range",
-        "min": 1,
-        "max": 580,
-        "step": 1,
+        "min": 1976,
+        "max": 2020,
+        "step": 4,
         "name": "Year:"
       }
     }
@@ -20,13 +23,12 @@
   "projection": {"type": "albersUsa"},
   "mark": "geoshape",
   "data": {
-    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/Fred-Unemployment.csv",
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/pVoteDemRatio.csv",
     "format": {"type": "csv"}
   },
   "transform": [
     {"calculate": "toNumber(yearSelector)", "as": "yearS"},
-    {"calculate": "((slice(datum.date,0,4)-1976)*12)+toNumber(slice(datum.date,5,7))","as": "count"},
-    {"filter": "datum.yearS == datum.count"},
+    {"filter": "datum.yearS == datum.year"},
     {
       "fold": [
         "California",
@@ -93,15 +95,19 @@
         "key": "properties.NAME",
         "fields": ["properties", "type", "geometry"]
       }
-    }
+    },
+    {"calculate": "datum.Value*100","as": "democrats_percentage"}
   ],
   "encoding": {
     "color": {
       "field": "Value",
       "legend": {"title": null, "orient": "right", "direction": "vertical"},
       "type": "quantitative",
-      "scale": {"domainMax": 17, "domainMin": 0}
+      "scale": {
+        "domainMax": 1, "domainMin": 0,
+        "range":["#C51007","#1307C5"]
+      }
     },
-    "tooltip": [{"field": "Value"}, {"field": "date"}]
+    "tooltip": [{"field": "democrats_percentage"}, {"field": "year"}]
   }
 }
