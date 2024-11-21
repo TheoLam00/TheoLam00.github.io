@@ -4,8 +4,8 @@
   "height": "container",
   "view": {"stroke": "transparent"},
   "title": {
-    "text": "Unemployment Rate",
-    "subtitle": "Source: Federal Reserve Bank of St. Louis"
+    "text": "US President election percentage of Democrats Votes",
+    "subtitle": "Source: MIT election data and science lab"
   },
   "params": [
     {
