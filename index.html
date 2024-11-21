@@ -20,7 +20,7 @@
 <body> 
     <nav>     
         <ul class="bar">
-            <li class="headTitle">Data Science for Economist Project</li>
+            <li class="headTitle">Data Science for Economist Project    |   Theo Lam</li>
             <li><a href="https://www.github.com/TheoLam00">GitHub</a></li>
             <li><a href="#Project">Data Profolio</a></li>
             <li><a href="#CC">Coding Challenges</a></li>
@@ -141,6 +141,7 @@
         <h2>Data Profolio</h2>
         <h1 class="big">Voting Behaviour in US</h1>
         <p></p>
+        <figure id="pVote" class="graph"></figure><br>
         <figure id="unemployment" class="graph"></figure>
     </section>
 
@@ -249,7 +250,9 @@
         }
 
         //project graph
-        let unemployment = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unemploymentMap.json";
+        let presidentVote = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/delete/pVote.json"
+        let unemployment = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unemployment.json";
+        vegaEmbed("#pVote",presidentVote);
         vegaEmbed('#unemployment',unemployment);
     </script>
 
