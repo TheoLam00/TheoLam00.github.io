@@ -108,6 +108,6 @@
         "range":["#C51007","#FFFFFF","#1307C5"]
       }
     },
-    "tooltip": [{"field": "democrats_percentage"}, {"field": "year"},{"field":"state"}]
+    "tooltip": [{"field": "democrats_percentage"}, {"field": "year"},{"field":"State"}]
   }
 }
