@@ -19,10 +19,7 @@
         "name": "Year:"
       }
     },
-    {
-      "name": "ShowPercentage",
-      "value":true,
-      "bind": {"input": "checkbox"}}
+    {"name": "ShowPercentage", "value": false, "bind": {"input": "checkbox"}}
   ],
   "projection": {"type": "albersUsa"},
   "mark": "geoshape",
@@ -101,9 +98,13 @@
       }
     },
     {"calculate": "datum.Value*100", "as": "democrats_percentage"},
-    {"calculate": "datum.Value>0.5?'Democrats':'Republicants'","as": "party"},
-    {"calculate": "ShowPercentage","as": "show"},
-    {"calculate": "datum.show?datum.Value:datum.party=='Democrats'?1:0","as": "Value"}
+    {"calculate": "datum.Value>0.5?'Democrats':'Republicants'", "as": "party"},
+    {"calculate": "ShowPercentage", "as": "show"},
+    {"calculate": "datum.Value","as": "value"},
+    {
+      "calculate": "datum.show?datum.value:datum.party=='Democrats'?1:0",
+      "as": "Value"
+    }
   ],
   "encoding": {
     "color": {
@@ -120,7 +121,7 @@
       {"field": "democrats_percentage"},
       {"field": "year"},
       {"field": "State"},
-      {"field":"party"}
+      {"field": "party"}
     ]
   }
 }
