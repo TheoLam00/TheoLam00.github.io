@@ -1,0 +1,31 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title":{ 
+    "text":"unemployment rate",
+    "subtitle":["Source: Federal Reserve Bank of St. Louis"]
+  },
+  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/Fred-Unemployment.csv"},
+  "mark": {
+    "type": "line"
+  },
+  "params": [
+    {
+      "name":"selectS",
+      "value":"Alabama",
+      "select":{"type":"point","fields": ["state"]},
+      "bind":{
+        "input":"select",
+        "options":["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
+        "name":"State:"
+        }
+    }
+  ],
+    "transform": [
+    {"calculate": "selectS.state[0]","as": "StateSS"},
+    {"filter": "datum.state == datum.StateSS"}
+  ],
+  "encoding": {
+    "x": {"timeUnit": "year", "field": "date","title":null},
+    "y": {"field": "value", "type": "quantitative","title":"Unemployment rate"}
+  }
+}
