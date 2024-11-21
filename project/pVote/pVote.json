@@ -21,7 +21,7 @@
     },
     {
       "name": "ShowPercentage",
-      "value":false,
+      "value":true,
       "bind": {"input": "checkbox"}}
   ],
   "projection": {"type": "albersUsa"},
