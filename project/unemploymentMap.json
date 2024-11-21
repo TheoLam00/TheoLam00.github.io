@@ -5,7 +5,7 @@
   "view": {"stroke": "transparent"},
   "title": {
     "text": "Unemployment Rate",
-    "subtitle":"Source: "Federal Reserve Bank of St. Louis"
+    "subtitle":"Source: Federal Reserve Bank of St. Louis"
   },
   "params": [
     {
