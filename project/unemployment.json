@@ -8,6 +8,8 @@
   "mark": {
     "type": "line"
   },
+  "width":"container",
+  "height":"container",
   "params": [
     {
       "name":"selectS",
