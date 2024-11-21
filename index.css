@@ -5,8 +5,6 @@ body {
   line-height: 1.6;
   background-color: #ebd8ad;
   margin:0 auto;
-  max-width: 80%;
-  padding-top: 60px;
 }
 
 
@@ -38,6 +36,8 @@ p {
 }
 
 section {
+  max-width: 80%;
+  margin:auto;
   margin-bottom: 2.5em;  /* We want a little more space between sections */
   background-color: var(--bg-main);
   border-radius: 10px;
@@ -70,7 +70,7 @@ img {
   border-radius: 10px;
   
   padding: 5px;
-  margin:5px;
+  margin:auto;
 
   display: none;
 }
@@ -173,13 +173,6 @@ img {
 }
 
 /*color theme*/
-.colorTop{
-  --bg-main: #F4ECD6;
-  --text:#333;
-  --a:#4b5451;
-  --a-hover:#283845;
-}
-
 .colorCC{
   --bg-main: #F4ECD6;
   --text:#333;
@@ -196,4 +189,44 @@ img {
 .colorProj{
   --bg-main: #F4ECD6;
   --text:#333;
+}
+
+/*head bar style*/
+ul.bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  width: 100%;
+  top:0;
+  height: 60px;
+}
+
+ul.bar li {
+  float: right;
+}
+
+ul.bar li a {
+  display: inline-block;
+  color: wheat;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.bar li a:hover:not(.active) {
+  background-color: #000;
+}
+
+ul.bar li a.active {
+  background-color:#04AA6D;
+}
+
+ul.bar li.headTitle{
+  color: wheat;
+  float: left;
+  padding: 10px;
+  font-size: large;
 }
