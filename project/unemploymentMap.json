@@ -3,7 +3,10 @@
   "width": "container",
   "height": "container",
   "view": {"stroke": "transparent"},
-  "title": {"text": "Unemployment Rate"},
+  "title": {
+    "text": "Unemployment Rate",
+    "subtitle":"Source: "Federal Reserve Bank of St. Louis"
+  },
   "params": [
     {
       "name": "yearSelector",
