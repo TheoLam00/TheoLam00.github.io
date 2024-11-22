@@ -4,7 +4,7 @@
     "text": "Swing State",
     "subtitle": "Source: MIT election data and science lab"
   },
-  "height":"container",
+  "height":400px,
   "data": {
     "url":"https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/swingState/pVoteDemRatio-long.csv"
   },
