@@ -4,6 +4,7 @@
     "text": "Swing State",
     "subtitle": "Source: MIT election data and science lab"
   },
+  "height":"container",
   "data": {
     "url":"https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/swingState/pVoteDemRatio-long.csv"
   },
@@ -35,7 +36,6 @@
     {"calculate": "toNumber(yearSelector)", "as": "yearS"},
     {"filter": "datum.yearS == datum.year"},
     {"calculate": "datum.demRatio*100","as": "percentage"}
-    //{"calculate": "swingSelector"}
   ],
   "mark": "bar",
   "encoding": {
