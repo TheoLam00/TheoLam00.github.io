@@ -95,6 +95,7 @@ img {
 .graph#swing{
   overflow: scroll;
   height: 450px;
+  width: 80%;
 }
 
 /*special size for graph in CC6*/
