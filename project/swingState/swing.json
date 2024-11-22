@@ -41,6 +41,13 @@
   "encoding": {
     "x": {"field": "state", "type": "nominal","sort":"-y"},
     "y": {"field": "percentage", "type": "quantitative","title":"Percentage of Vote to Democrats Canadiate","scale":{"domain":[0,100]}},
-    "color":{"field":"party"}
+    "color":{
+      "field":"party",
+      "type": "nominal",
+      "scale":{
+        "domain":["Democrats","Swing","Republican"],
+        "range":["#1307C5","#808080","#C51007"]
+      }
+    }
   }
 }
