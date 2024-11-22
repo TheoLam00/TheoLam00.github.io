@@ -92,6 +92,10 @@ img {
   justify-content: center;
 }
 
+.graph#swing{
+  overflow: scroll;
+}
+
 /*special size for graph in CC6*/
 .graph_cc6{
   background-color: #f1f0f0;
