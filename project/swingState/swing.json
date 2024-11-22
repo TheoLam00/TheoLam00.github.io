@@ -4,7 +4,6 @@
     "text": "Swing State",
     "subtitle": "Source: MIT election data and science lab"
   },
-  "height":400,
   "data": {
     "url":"https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/swingState/pVoteDemRatio-long.csv"
   },
@@ -28,18 +27,20 @@
         "min": 0,
         "max": 5,
         "step": 0.1,
-        "name": "Percentage:"
+        "name": "%Difference:"
       }
     }
   ],
   "transform": [
     {"calculate": "toNumber(yearSelector)", "as": "yearS"},
     {"filter": "datum.yearS == datum.year"},
-    {"calculate": "datum.demRatio*100","as": "percentage"}
+    {"calculate": "datum.demRatio*100","as": "percentage"},
+    {"calculate": "datum.percentage>(50+swingSelector)?'Democrats':datum.percentage<(50-swingSelector)?'Republican':'Swing'","as": "party"}
   ],
   "mark": "bar",
   "encoding": {
     "x": {"field": "state", "type": "nominal","sort":"-y"},
-    "y": {"field": "percentage", "type": "quantitative","title":"Percentage of Vote to Democrats Canadiate","scale":{"domain":[0,100]}}
+    "y": {"field": "percentage", "type": "quantitative","title":"Percentage of Vote to Democrats Canadiate","scale":{"domain":[0,100]}},
+    "color":{"field":"party"}
   }
 }
