@@ -4,8 +4,8 @@
   "height": "container",
   "view": {"stroke": "transparent"},
   "title": {
-    "text": "Unemployment Rate",
-    "subtitle": "Source: Federal Reserve Bank of St. Louis"
+    "text": "US President election percentage of Democrats Votes",
+    "subtitle": "Source: MIT election data and science lab"
   },
   "params": [
     {
@@ -18,12 +18,13 @@
         "step": 4,
         "name": "Year:"
       }
-    }
+    },
+    {"name": "ShowPercentage", "value": false, "bind": {"input": "checkbox"}}
   ],
   "projection": {"type": "albersUsa"},
   "mark": "geoshape",
   "data": {
-    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/pVoteDemRatio.csv",
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/pVote/pVoteDemRatio.csv",
     "format": {"type": "csv"}
   },
   "transform": [
@@ -96,7 +97,14 @@
         "fields": ["properties", "type", "geometry"]
       }
     },
-    {"calculate": "datum.Value*100","as": "democrats_percentage"}
+    {"calculate": "datum.Value*100", "as": "democrats_percentage"},
+    {"calculate": "datum.Value>0.5?'Democrats':'Republicants'", "as": "party"},
+    {"calculate": "ShowPercentage", "as": "show"},
+    {"calculate": "datum.Value","as": "value"},
+    {
+      "calculate": "datum.show?datum.value:datum.party=='Democrats'?1:0",
+      "as": "Value"
+    }
   ],
   "encoding": {
     "color": {
@@ -104,10 +112,16 @@
       "legend": {"title": null, "orient": "right", "direction": "vertical"},
       "type": "quantitative",
       "scale": {
-        "domainMax": 1, "domainMin": 0,
-        "range":["#C51007","#1307C5"]
+        "domainMax": 1,
+        "domainMin": 0,
+        "range": ["#C51007", "#FFFFFF", "#1307C5"]
       }
     },
-    "tooltip": [{"field": "democrats_percentage"}, {"field": "year"}]
+    "tooltip": [
+      {"field": "democrats_percentage"},
+      {"field": "year"},
+      {"field": "State"},
+      {"field": "party"}
+    ]
   }
 }

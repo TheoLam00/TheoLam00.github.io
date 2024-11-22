@@ -143,7 +143,6 @@
         <p></p>
         <figure id="pVote" class="graph"></figure><br>
         <p>Data from <a href="https://electionlab.mit.edu/data">MIT election data and science lab</a></p><br>
-        <figure id="swing" class="graph"></figure>
         <figure id="unemployment" class="graph"></figure>
     </section>
 
@@ -253,9 +252,6 @@
 
         //project graph
         let presidentVote = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/pVote.json"
-        vegaEmbed("#pVote",presidentVote);
-        let swingState = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/swingState/swing.json";
-        vegaEmbed("#swing",swingState);
         let unemployment = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unemployment.json";
         vegaEmbed('#unemployment',unemployment);
     </script>
