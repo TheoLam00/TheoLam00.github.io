@@ -33,11 +33,13 @@
   ],
   "transform": [
     {"calculate": "toNumber(yearSelector)", "as": "yearS"},
-    {"filter": "datum.yearS == datum.year"}
+    {"filter": "datum.yearS == datum.year"},
+    {"calculate": "datum.demRatio*100","as": "percentage"}
+    //{"calculate": "swingSelector"}
   ],
   "mark": "bar",
   "encoding": {
     "x": {"field": "state", "type": "nominal","sort":"-y"},
-    "y": {"field": "demRatio", "type": "quantitative","title":"Percentage of Vote to Democrats Canadiate"}
+    "y": {"field": "percentage", "type": "quantitative","title":"Percentage of Vote to Democrats Canadiate","scale":{"domain":[0,100]}}
   }
 }
