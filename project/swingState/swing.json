@@ -27,7 +27,7 @@
         "min": 0,
         "max": 5,
         "step": 0.1,
-        "name": "%Difference:"
+        "name": "Difference:"
       }
     }
   ],
@@ -48,6 +48,11 @@
         "domain":["Democrats","Swing","Republican"],
         "range":["#1307C5","#808080","#C51007"]
       }
+    },
+    "tooltip":[
+      {"field":"state"},
+      {"field":"percentage"},
+      {"field":"party"}
+    ]
     }
   }
-}
