@@ -139,14 +139,14 @@
 
     <section id = "Project" class="colorProj">
         <h2>Data Profolio</h2>
-        <h1 class="big">Voting Behaviour in US</h1>
+        <h1 class="big">Voting Behaviour in US: Swing State</h1>
         <p></p>
         <figure id="pVote" class="graph"></figure><br>
         <p>Data from <a href="https://electionlab.mit.edu/data">MIT election data and science lab</a></p><br>
         <p>Percentage is divided by the total number fo votes vote to the Democrat or Republican canadiates(counting the canadiate with most votes from the party if more than one canadiate)</p><br>
         <figure id="swing" class="graph"></figure>
         <br>
-        <figure id="swingVoteRate" class="graph"></figure>
+        <figure id="swingVoteRate" class="graph"></figure><br>
         <figure id="unemployment" class="graph"></figure>
         <div>
             <h3>Reference</h3>
@@ -263,6 +263,8 @@
         vegaEmbed("#pVote",presidentVote);
         let swingState = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/swingState/swing.json";
         vegaEmbed("#swing",swingState);
+        let swingVote = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/voteRate/swingVSvoteRate.json"
+        vegaEmbed('#swingVoteRate',swingVote)
         let unemployment = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/unemployment.json";
         vegaEmbed('#unemployment',unemployment);
         vegaEmbed('#unem&pVote',unemployment);
