@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title":{
+    "text":"Swing State and Vote Rate",
+    "subtitle":"Source: United States Census Bureau"
+  },
+  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/voteRate/voteRatesCleaned.csv"},
+  "mark": "point",
+  "transform": [
+    {"filter":"datum.swingIndex<0.25"}
+  ],
+  "encoding": {
+    "x": {"field": "swingIndex", "type": "quantitative"},
+    "y": {"field": "voteRate", "type": "quantitative","scale":{"domain":[0,100]}}
+  }
+}
