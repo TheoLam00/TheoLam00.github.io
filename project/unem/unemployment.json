@@ -4,7 +4,7 @@
     "text":"unemployment rate",
     "subtitle":["Source: Federal Reserve Bank of St. Louis"]
   },
-  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/Fred-Unemployment.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/Fred-Unemployment.csv"},
   "mark": {
     "type": "line"
   },
