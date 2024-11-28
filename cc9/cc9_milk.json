@@ -21,7 +21,7 @@
       "bin":{"maxbins":30},
       "field": "price",
       "type": "quantitative",
-      "scale":{"domain":[0,6]}
+      "scale":{"domain":[0,3]}
     },
     "color": {
       "aggregate": "count",
