@@ -1,33 +1,110 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title":{ 
-    "text":"unemployment rate",
-    "subtitle":["Source: Federal Reserve Bank of St. Louis"]
+  "title": {
+    "text": "unemployment rate",
+    "subtitle": ["Source: Federal Reserve Bank of St. Louis"]
   },
-  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/Fred-Unemployment.csv"},
-  "mark": {
-    "type": "line"
+  "data": {
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/Fred-Unemployment.csv"
   },
-  "width":"container",
-  "height":"container",
+  "mark": {"type": "line"},
+  "width": "container",
+  "height": "container",
   "params": [
     {
-      "name":"selectS",
-      "value":"Alabama",
-      "select":{"type":"point","fields": ["state"]},
-      "bind":{
-        "input":"select",
-        "options":["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"],
-        "name":"State:"
-        }
+      "name": "selectS",
+      "value": "Alabama",
+      "select": {"type": "point", "fields": ["state"]},
+      "bind": {
+        "input": "select",
+        "options": [
+          "Alabama",
+          "Alaska",
+          "Arizona",
+          "Arkansas",
+          "California",
+          "Colorado",
+          "Connecticut",
+          "Delaware",
+          "Florida",
+          "Georgia",
+          "Hawaii",
+          "Idaho",
+          "Illinois",
+          "Indiana",
+          "Iowa",
+          "Kansas",
+          "Kentucky",
+          "Louisiana",
+          "Maine",
+          "Maryland",
+          "Massachusetts",
+          "Michigan",
+          "Minnesota",
+          "Mississippi",
+          "Missouri",
+          "Montana",
+          "Nebraska",
+          "Nevada",
+          "New Hampshire",
+          "New Jersey",
+          "New Mexico",
+          "New York",
+          "North Carolina",
+          "North Dakota",
+          "Ohio",
+          "Oklahoma",
+          "Oregon",
+          "Pennsylvania",
+          "Rhode Island",
+          "South Carolina",
+          "South Dakota",
+          "Tennessee",
+          "Texas",
+          "Utah",
+          "Vermont",
+          "Virginia",
+          "Washington",
+          "West Virginia",
+          "Wisconsin",
+          "Wyoming"
+        ],
+        "name": "State:"
+      }
+    },
+    {"name":"startYear", "value":1976,
+       "bind":{
+         "input": "range",
+         "min": 1976, 
+         "max": 2024, 
+         "step": 1,
+         "name": "Start year:"}
+    },
+
+    {"name":"endYear", "value":2024,
+       "bind":{
+         "input": "range",
+         "min": 1987, 
+         "max": 2024, 
+         "step": 1,
+         "name": "End year:"}
     }
   ],
-    "transform": [
-    {"calculate": "selectS.state[0]","as": "StateSS"},
-    {"filter": "datum.state == datum.StateSS"}
+  "transform": [
+    {"calculate": "selectS.state[0]", "as": "StateS"},
+    {"filter":"datum.StateS==datum.state"},
+    {"calculate": "datetime(datum.date)","as": "date"},
+    {"calculate": "datetime(startYear,0)","as": "start"},
+    {"calculate": "datetime(endYear,0)","as": "end"},
+    {"filter": "datum.date >= datum.start"},
+    {"filter": "datum.date <= datum.end"}
   ],
   "encoding": {
-    "x": {"timeUnit": "year", "field": "date","title":null},
-    "y": {"field": "value", "type": "quantitative","title":"Unemployment rate"}
+    "x": {"timeUnit": "year", "field": "date", "title": null},
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": "Unemployment rate"
+    }
   }
 }
