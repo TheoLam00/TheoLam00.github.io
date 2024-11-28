@@ -35,6 +35,26 @@
         "x": {"field": "demRatio","type":"quantitative"},
         "y": {"field": "rate","type":"quantitative"}
       }
+    },
+    {
+      "transform": [
+        {
+          "regression": "rate",
+          "on": "demRatio",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {"type": "nominal", "field": "R2"}
+      }
     }
   ]
 }
