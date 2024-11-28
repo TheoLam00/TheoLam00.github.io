@@ -122,6 +122,7 @@
         <button type="button" class="expandButton" onclick="show(8)"><h3>CC8</h3><figure id="figButton8" class="figButton"></figure></button>
         <div class="box">
         <button type="button" onclick="hide(8)" class="collaspeButton"><h3>CC8: Analytics charts.</h3></button><br>
+        <figure id="cc8_1" class="graph"></figure>
         </div>
 
         <!--CC9-->
@@ -155,7 +156,8 @@
         <br>
         <figure id="swingVoteRate" class="graph"></figure><br>
         <p>Data from:<a href="https://www.census.gov/data/tables/time-series/demo/voting-and-registration/voting-historical-time-series.html">United States Census Bureau</a></p>
-        <figure id="unemployment" class="graph"></figure>
+        <figure id="unemployment" class="graph"></figure><br>
+        <figure id="unemDem" class="graph"></figure>
         <div>
             <h3>Reference</h3>
             <p><a href="https://dataverse.harvard.edu/file.xhtml?fileId=7241480">MIT Election Data and Science Lab, 2017, "U.S. President 1976–2020", https://doi.org/10.7910/DVN/42MVDX, Harvard Dataverse, V8, UNF:6:F0opd1IRbeYI9QyVfzglUw== [fileUNF]</a></p>
@@ -212,6 +214,9 @@
         vegaEmbed('#cc7-2', cc7_2);
 
         //cc8
+        //to be change to the cc8 one
+        let cc8_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/cc9_egg.json";
+        vegaEmbed('#cc8_1',cc8_1)
 
         //cc9
         let cc9_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/cc9_egg.json";
@@ -221,10 +226,9 @@
 
         //cc10
         let unemployment = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/unemployment.json";
-        //to be change to another graph***************************************************
-        let cc10_2 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/unemployment.json";
+        let presidentVote = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/pVote/pVote.json"
         vegaEmbed('#cc10_1',unemployment);
-        vegaEmbed('#cc10_2',cc10_2);
+        vegaEmbed('#cc10_2',presidentVote);
 
         //expand button
         vegaEmbed('#figButton1', figure_1);
@@ -234,9 +238,7 @@
         vegaEmbed('#figButton5', cc5);
         vegaEmbed('#figButton6', cc6_1);
         vegaEmbed('#figButton7', cc7_1);
-
-        let test = figure_1;
-        vegaEmbed('#figButton8', test);
+        vegaEmbed('#figButton8', cc8_1);
         vegaEmbed('#figButton9', cc9_1);
         vegaEmbed('#figButton10', unemployment);
 
@@ -282,15 +284,14 @@
         }
 
         //project graph
-        let presidentVote = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/pVote/pVote.json"
         vegaEmbed("#pVote",presidentVote);
         let swingState = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/swingState/swing.json";
         vegaEmbed("#swing",swingState);
-        let swingVote = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/voteRate/swingVSvoteRate.json"
+        let swingVote = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/voteRate/swingVSvoteRate.json";
         vegaEmbed('#swingVoteRate',swingVote);
-
         vegaEmbed('#unemployment',unemployment);
-        vegaEmbed('#unem&pVote',unemployment);
+        let unemDem = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/dem%26unem.json";
+        vegaEmbed('#unemDem',unemDem);
     </script>
 
 </body>
