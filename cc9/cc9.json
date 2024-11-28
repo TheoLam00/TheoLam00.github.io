@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/priceCleaned.csv"},
+  "mark": "point",
+  "width": "container",
+  "height": "container",
+  "transform": [
+    {"calculate": "floor(datum.quote_date/100)","as": "year"},
+    {"calculate": "floor(datum.quote_date%100)","as": "month"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "price",
+      "type": "quantitative"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
