@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": "container",
+  "width": "container",
+  "title": {
+    "text": "Unemployment and Voting to Democrats",
+    "subtitle": "Data Source: Fred and MIT"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/unem%26swing.csv"
+  },
+  "params": [
+    {
+      "name":"choice",
+      "value":"3-Month_Avg",
+      "bind":{
+        "input": "select",
+        "options":["3-Month_Avg","6-Month_Avg","year_Avg"]
+      }
+    }
+  ],
+  "transform": [
+        {"filter":"choice==datum.avg"}
+      ],
+  "layer":[
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {"field": "demRatio", "type": "quantitative"},
+        "y": {
+          "field": "rate",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark":{"type":"line","color":"firebrick"},
+      "transform": [
+        {"regression": "rate","on":"demRatio"}
+      ],
+      "encoding": {
+        "x":{"field":"demRatio","axis":null},
+        "y":{"field":"rate","axis":null}
+      }
+    }
+  ]
+}
