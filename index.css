@@ -161,6 +161,10 @@ img {
   background-color: var(--bg-colBut-press);
 }
 
+.collaspeButton:hover{
+  transform: scale(105%);
+}
+
 /*Show button*/
 .showButton{
   background-color: #CCDAD1;
