@@ -3,7 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/priceCleaned.csv"
   },
-  "mark": "point",
+  "mark": {"type":"point","filled":true},
   "title": "Price of EGGS-MEDIUM-PER DOZ OR 2 X 6",
   "width": "container",
   "height": "container",
