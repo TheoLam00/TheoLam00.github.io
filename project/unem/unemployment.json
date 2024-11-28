@@ -72,35 +72,40 @@
         "name": "State:"
       }
     },
-    {"name":"startYear", "value":1976,
-       "bind":{
-         "input": "range",
-         "min": 1976, 
-         "max": 2024, 
-         "step": 1,
-         "name": "Start year:"}
+    {
+      "name": "startYear",
+      "value": 1976,
+      "bind": {
+        "input": "range",
+        "min": 1976,
+        "max": 2024,
+        "step": 1,
+        "name": "Start year:"
+      }
     },
-
-    {"name":"endYear", "value":2024,
-       "bind":{
-         "input": "range",
-         "min": 1987, 
-         "max": 2024, 
-         "step": 1,
-         "name": "End year:"}
+    {
+      "name": "endYear",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 1987,
+        "max": 2024,
+        "step": 1,
+        "name": "End year:"
+      }
     }
   ],
   "transform": [
     {"calculate": "selectS.state[0]", "as": "StateS"},
-    {"filter":"datum.StateS==datum.state"},
-    {"calculate": "datetime(datum.date)","as": "date"},
-    {"calculate": "datetime(startYear,0)","as": "start"},
-    {"calculate": "datetime(endYear,0)","as": "end"},
+    {"filter": "datum.StateS==datum.state"},
+    {"calculate": "datetime(datum.date)", "as": "date"},
+    {"calculate": "datetime(startYear,0)", "as": "start"},
+    {"calculate": "datetime(endYear,0)", "as": "end"},
     {"filter": "datum.date >= datum.start"},
     {"filter": "datum.date <= datum.end"}
   ],
   "encoding": {
-    "x": {"timeUnit": "year", "field": "date", "title": null},
+    "x": {"field": "date","type": "temporal", "title": null},
     "y": {
       "field": "value",
       "type": "quantitative",
