@@ -137,7 +137,10 @@
         <!--CC10-->
         <button type="button" class="expandButton" onclick="show(10)"><h3>CC10</h3><figure id="figButton10" class="figButton"></figure></button>
         <div class="box">
-        <button type="button" onclick="hide(10)" class="collaspeButton"><h3>CC10</h3></button><br>
+        <button type="button" onclick="hide(10)" class="collaspeButton"><h3>CC10: Interactive Visualisations</h3></button><br>
+        <figure id="cc10_1" class="graph"></figure>
+        <p>The graph will be use in the project. The python notebook on cleaning the data is in the file project/unem</p>
+        <figure id="cc10_2" class="graph"></figure>
         </div>
     </section>
 
@@ -216,6 +219,13 @@
         vegaEmbed('#cc9_1',cc9_1);
         vegaEmbed('#cc9_2',cc9_2);
 
+        //cc10
+        let unemployment = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/unemployment.json";
+        //to be change to another graph***************************************************
+        let cc10_2 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/unemployment.json";
+        vegaEmbed('#cc10_1',unemployment);
+        vegaEmbed('#cc10_2',cc10_2);
+
         //expand button
         vegaEmbed('#figButton1', figure_1);
         vegaEmbed('#figButton2', wk2_1);
@@ -228,7 +238,7 @@
         let test = figure_1;
         vegaEmbed('#figButton8', test);
         vegaEmbed('#figButton9', cc9_1);
-        vegaEmbed('#figButton10', test);
+        vegaEmbed('#figButton10', unemployment);
 
         function showAll(){
             var show = document.querySelectorAll(".box");
@@ -277,8 +287,8 @@
         let swingState = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/swingState/swing.json";
         vegaEmbed("#swing",swingState);
         let swingVote = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/voteRate/swingVSvoteRate.json"
-        vegaEmbed('#swingVoteRate',swingVote)
-        let unemployment = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/unem/unemployment.json";
+        vegaEmbed('#swingVoteRate',swingVote);
+
         vegaEmbed('#unemployment',unemployment);
         vegaEmbed('#unem&pVote',unemployment);
     </script>
