@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/priceCleaned.csv"},
-  "mark": "point",
+  "mark": {"type":"point","filled":true},
   "title":"Price of SHOP MILK-WHOLE MILK-4PT/2LTR",
   "width": "container",
   "height": "container",
