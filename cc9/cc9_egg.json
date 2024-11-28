@@ -1,35 +1,23 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/priceCleaned.csv"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/priceCleaned.csv"
+  },
   "mark": "point",
-  "title":"Price of EGGS-MEDIUM-PER DOZ OR 2 X 6",
+  "title": "Price of EGGS-MEDIUM-PER DOZ OR 2 X 6",
   "width": "container",
   "height": "container",
   "transform": [
-    {"calculate": "floor(datum.quote_date/100)","as": "year"},
-    {"calculate": "floor(datum.quote_date%100)","as": "month"},
-    {"calculate": "datetime(datum.year,datum.month-1)","as":"date"},
-    {"filter":{"field": "item_id","equal":"211602"}},
-    {"filter":"datum.price<50"}
+    {"calculate": "floor(datum.quote_date/100)", "as": "year"},
+    {"calculate": "floor(datum.quote_date%100)", "as": "month"},
+    {"calculate": "datetime(datum.year,datum.month-1)", "as": "date"},
+    {"filter": {"field": "item_id", "equal": "211602"}},
+    {"filter": "datum.price<50"}
   ],
   "encoding": {
-    "x": {
-      "field": "date",
-      "type": "temporal"
-    },
-    "y": {
-      "bin":{"maxbins":30},
-      "field": "price",
-      "type": "quantitative"
-    },
-    "color": {
-      "aggregate": "count",
-      "type": "quantitative"
-    }
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"bin": {"maxbins": 30}, "field": "price", "type": "quantitative","scale":{"domain":[0,6]}},
+    "color": {"aggregate": "count", "type": "quantitative"}
   },
-  "config": {
-    "view": {
-      "stroke": "transparent"
-    }
-  }
+  "config": {"view": {"stroke": "transparent"}}
 }
