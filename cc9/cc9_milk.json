@@ -20,7 +20,8 @@
     "y": {
       "bin":{"maxbins":30},
       "field": "price",
-      "type": "quantitative"
+      "type": "quantitative",
+      "scale":{"domain":[0,6]}
     },
     "color": {
       "aggregate": "count",
