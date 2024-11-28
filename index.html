@@ -128,6 +128,10 @@
         <button type="button" class="expandButton" onclick="show(9)"><h3>CC9</h3><figure id="figButton9" class="figButton"></figure></button>
         <div class="box">
         <button type="button" onclick="hide(9)" class="collaspeButton"><h3>CC9: Big Data. Extracting a story from millions of prices.</h3></button><br>
+        <figure id="cc9_1" class="graph"></figure>
+        <figure id="cc9_2" class="graph"></figure>
+        <p>The figures take data from class <a href="https://www.dropbox.com/scl/fo/phq41r2641wp2f454l2gs/AFIIt5xY_WCZeHF20r1r9sg?rlkey=eg1mulaydwbmdwixsefh7bnlb&e=1&dl=0">dropbox</a>
+             and created two graphs of egg and milk price density overtime and one of the outliner (over 100pounds) were filtered from the data</p>
         </div>
 
         <!--CC10-->
@@ -204,6 +208,14 @@
         vegaEmbed('#cc7-1', cc7_1);
         vegaEmbed('#cc7-2', cc7_2);
 
+        //cc8
+
+        //cc9
+        let cc9_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/cc9_egg.json";
+        let cc9_2 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/cc9_milk.json";
+        vegaEmbed('#cc9_1',cc9_1);
+        vegaEmbed('#cc9_2',cc9_2);
+
         //expand button
         vegaEmbed('#figButton1', figure_1);
         vegaEmbed('#figButton2', wk2_1);
@@ -215,7 +227,7 @@
 
         let test = figure_1;
         vegaEmbed('#figButton8', test);
-        vegaEmbed('#figButton9', test);
+        vegaEmbed('#figButton9', cc9_1);
         vegaEmbed('#figButton10', test);
 
         function showAll(){
