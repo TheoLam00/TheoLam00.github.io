@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/priceCleaned.csv"},
+  "mark": "point",
+  "title":"Price of SHOP MILK-WHOLE MILK-4PT/2LTR",
+  "width": "container",
+  "height": "container",
+  "transform": [
+    {"calculate": "floor(datum.quote_date/100)","as": "year"},
+    {"calculate": "floor(datum.quote_date%100)","as": "month"},
+    {"calculate": "datetime(datum.year,datum.month-1)","as":"date"},
+    {"filter":{"field": "item_id","equal":"211709"}},
+    {"filter":"datum.price<50"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "bin":{"maxbins":30},
+      "field": "price",
+      "type": "quantitative"
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    }
+  }
+}
