@@ -11,36 +11,29 @@
   },
   "params": [
     {
-      "name":"choice",
-      "value":"3-Month_Avg",
-      "bind":{
+      "name": "choice",
+      "value": "3-Month_Avg",
+      "bind": {
         "input": "select",
-        "options":["3-Month_Avg","6-Month_Avg","year_Avg"]
+        "options": ["3-Month_Avg", "6-Month_Avg", "year_Avg"]
       }
     }
   ],
-  "transform": [
-        {"filter":"choice==datum.avg"}
-      ],
-  "layer":[
+  "transform": [{"filter": "choice==datum.avg"}],
+  "layer": [
     {
       "mark": "point",
       "encoding": {
         "x": {"field": "demRatio", "type": "quantitative"},
-        "y": {
-          "field": "rate",
-          "type": "quantitative"
-        }
+        "y": {"field": "rate", "type": "quantitative"}
       }
     },
     {
-      "mark":{"type":"line","color":"firebrick"},
-      "transform": [
-        {"regression": "rate","on":"demRatio"}
-      ],
+      "mark": {"type": "line", "color": "firebrick"},
+      "transform": [{"regression": "rate", "on": "demRatio"}],
       "encoding": {
-        "x":{"field":"demRatio","axis":null},
-        "y":{"field":"rate","axis":null}
+        "x": {"field": "demRatio","type":"quantitative"},
+        "y": {"field": "rate","type":"quantitative"}
       }
     }
   ]
