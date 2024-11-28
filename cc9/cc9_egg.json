@@ -16,7 +16,7 @@
   ],
   "encoding": {
     "x": {"field": "date", "type": "temporal"},
-    "y": {"bin": {"maxbins": 30}, "field": "price", "type": "quantitative","scale":{"domain":[0,6]}},
+    "y": {"bin": {"maxbins": 30}, "field": "price", "type": "quantitative","scale":{"domain":[0,5.8]}},
     "color": {"aggregate": "count", "type": "quantitative"}
   },
   "config": {"view": {"stroke": "transparent"}}
