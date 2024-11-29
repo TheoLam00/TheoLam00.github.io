@@ -1,1 +1,40 @@
 
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title":{
+    "text":"Unemployment rate in Penn and New Jersey",
+    "subtitle":"Source: Fred"
+  },
+  "width":"container",
+  "height":"container",
+  "data": {"url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc8/cc8_1.csv"},
+  "layer":[
+    {
+      "mark": "line",
+      "encoding": {
+        "x": {"field": "date", "type": "temporal"},
+        "y": {"field": "value", "type": "quantitative"},
+        "color":{"field":"state"}
+      }
+    },
+    {
+      "mark": {
+      "type": "rect",
+      "color": "lightgrey",
+      "opacity":{"expr": "0.01"}
+    },
+    "encoding": {
+      "x": {
+        "datum": {"expr": "datetime(1992,3)"},
+        "type": "temporal"
+      },
+      "y": {
+        "datum": {"expr": "0"},
+        "type": "quantitative"
+      },
+      "x2": {"datum": {"expr": "datetime(1990,0)"}},
+      "y2": {"datum": {"expr": "9"}}
+    }
+    }
+  ]
+}
