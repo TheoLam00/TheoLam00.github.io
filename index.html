@@ -123,6 +123,9 @@
         <div class="box">
         <button type="button" onclick="hide(8)" class="collaspeButton"><h3>CC8: Analytics charts.</h3></button><br>
         <figure id="cc8_1" class="graph"></figure>
+        <p>This is inspired by work <a href="#didRef">Card and Krueger (1994)</a></p>
+        <p>Although there seems to have a different in the trend of unemployment in these two similar states. The different start far before the raise in minimum wage on 1st April 1992</p>
+        <figure id="cc8_2" class="graph"></figure>
         </div>
 
         <!--CC9-->
@@ -162,6 +165,7 @@
         <div>
             <h3>Reference</h3>
             <p><a href="https://dataverse.harvard.edu/file.xhtml?fileId=7241480">MIT Election Data and Science Lab, 2017, "U.S. President 1976–2020", https://doi.org/10.7910/DVN/42MVDX, Harvard Dataverse, V8, UNF:6:F0opd1IRbeYI9QyVfzglUw== [fileUNF]</a></p>
+            <p id="didRef">Card, David, and Alan B. Krueger. “Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania: Reply.” The American Economic Review 90, no. 5 (2000): 1397–1420. http://www.jstor.org/stable/2677856.</p>
         </div>
     </section>
 
@@ -215,9 +219,10 @@
         vegaEmbed('#cc7-2', cc7_2);
 
         //cc8
-        //to be change to the cc8 one
-        let cc8_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/cc9_egg.json";
-        vegaEmbed('#cc8_1',cc8_1)
+        let cc8_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc8/cc8_1.json";
+        vegaEmbed('#cc8_1',cc8_1);
+        let cc8_2 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/dem%26unem.json";
+        vegaEmbed('#cc8_2',cc8_2);
 
         //cc9
         let cc9_1 = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/cc9/cc9_egg.json";
