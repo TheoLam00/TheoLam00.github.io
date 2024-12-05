@@ -39,7 +39,7 @@
       "scale": {"type": "log", "base": 10}
     },
     "color": {"field": "party"},
-    "size": {"field": "vote","type": "quantitative"},
+    "size": {"field": "vote","type": "quantitative","legend":null},
     "tooltip": [
       {"field": "state"},
       {"field": "spending"},
