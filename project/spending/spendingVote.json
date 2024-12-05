@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": "container",
+  "width": "container",
+  "title": {
+    "text": "Campaign Spending and Voting",
+    "subtitle": "Source: Federal Election Commission"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/spending/spendingVote.csv"
+  },
+  "params": [
+    {
+      "name": "yearSelector",
+      "value": 2008,
+      "bind": {
+        "input": "range",
+        "min": 2008,
+        "max": 2020,
+        "step": 4,
+        "name": "Year:"
+      }
+    }
+  ],
+  "transform": [
+    {"calculate": "abs(0.5-datum.demRatio)","as": "swingIndex"},
+    {"calculate": "toNumber(yearSelector)", "as": "yearS"},
+    {"filter": "datum.yearS == datum.year"},
+    {"filter":"datum.swingIndex<0.4"}
+  ],
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "swingIndex", "type": "quantitative"},
+    "y": {
+      "field": "spending",
+      "type": "quantitative",
+      "scale": {"type": "log", "base": 10}
+    },
+    "color":{"field":"party"},
+    "size":{"field":"vote","legend":null}
+  }
+}

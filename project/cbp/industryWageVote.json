@@ -40,6 +40,9 @@
         ],
         "name": "Industry Type:"
       }
+    },
+    {
+      "name": "Swing", "value": false, "bind": {"input": "checkbox"}
     }
   ],
   "transform": [
@@ -48,13 +51,14 @@
     {"calculate": "abs(0.5-datum.demRatio)", "as": "swingIndex"},
     {"calculate": "datum.annual_payroll/datum.num_employees", "as": "wage"},
     {"calculate": "datum.total_pop*1000", "as": "total_pop"},
-    {"calculate": "datum.num_employees/datum.total_pop", "as": "parti"}
+    {"calculate": "datum.num_employees/datum.total_pop", "as": "parti"},
+    {"calculate": "Swing?datum.swingIndex:datum.demRatio","as": "vote"}
   ],
   "layer": [
     {
       "mark": "point",
       "encoding": {
-        "x": {"field": "demRatio", "type": "quantitative"},
+        "x": {"field": "vote", "type": "quantitative"},
         "y": {"field": "wage", "type": "quantitative"}
       }
     }
