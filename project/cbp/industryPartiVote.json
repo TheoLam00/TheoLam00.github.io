@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Industry Wage and Voting",
+    "text": "Industry Participant rate and Voting",
     "subtitle": ["Source: United States Census Bureau"]
   },
   "data": {
@@ -55,7 +55,7 @@
       "mark": "point",
       "encoding": {
         "x": {"field": "demRatio", "type": "quantitative"},
-        "y": {"field": "wage", "type": "quantitative"}
+        "y": {"field": "parti", "type": "quantitative"}
       }
     }
   ]
