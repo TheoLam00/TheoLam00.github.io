@@ -1,0 +1,409 @@
+,candidate,state,spending,year
+1,"McCain, John S",Alaska,333762.32,2008
+2,"McCain, John S",Alabama,1325086.19,2008
+3,"McCain, John S",Arkansas,29328.83,2008
+4,"McCain, John S",Arizona,15497810.46,2008
+5,"McCain, John S",California,7326717.33,2008
+6,"McCain, John S",Colorado,1012884.58,2008
+7,"McCain, John S",Connecticut,241202.72999999998,2008
+8,"McCain, John S",District of Columbia,9719344.84,2008
+9,"McCain, John S",Delaware,6685.44,2008
+11,"McCain, John S",Florida,6077131.6,2008
+12,"McCain, John S",Georgia,1941499.49,2008
+14,"McCain, John S",Hawaii,6673.29,2008
+15,"McCain, John S",Iowa,928022.99,2008
+16,"McCain, John S",Idaho,6016.7,2008
+17,"McCain, John S",Illinois,2465388.52,2008
+18,"McCain, John S",Indiana,2339128.69,2008
+19,"McCain, John S",Kansas,4259097.53,2008
+20,"McCain, John S",Kentucky,97544.14,2008
+21,"McCain, John S",Louisiana,190805.13,2008
+22,"McCain, John S",Massachusetts,1186072.73,2008
+23,"McCain, John S",Maryland,122532734.88,2008
+24,"McCain, John S",Maine,46608.04,2008
+25,"McCain, John S",Michigan,2090265.71,2008
+26,"McCain, John S",Minnesota,5373211.44,2008
+27,"McCain, John S",Missouri,585104.72,2008
+28,"McCain, John S",Mississippi,416116.68,2008
+29,"McCain, John S",Montana,85926.95,2008
+30,"McCain, John S",North Carolina,1040013.98,2008
+31,"McCain, John S",North Dakota,2982.5299999999997,2008
+32,"McCain, John S",Nebraska,27059.45,2008
+33,"McCain, John S",New Hampshire,1456729.74,2008
+34,"McCain, John S",New Jersey,2428653.75,2008
+35,"McCain, John S",New Mexico,2630770.35,2008
+37,"McCain, John S",Nevada,267749.44,2008
+38,"McCain, John S",New York,7424207.69,2008
+39,"McCain, John S",Ohio,7507046.54,2008
+40,"McCain, John S",Oklahoma,177270.16,2008
+42,"McCain, John S",Oregon,71501.61,2008
+43,"McCain, John S",Pennsylvania,5626315.08,2008
+46,"McCain, John S",Rhode Island,9441.4,2008
+47,"McCain, John S",South Carolina,1749206.18,2008
+48,"McCain, John S",South Dakota,22311.7,2008
+49,"McCain, John S",Tennessee,1013914.22,2008
+50,"McCain, John S",Texas,6906158.34,2008
+52,"McCain, John S",Utah,1171612.53,2008
+53,"McCain, John S",Virginia,59199833.83,2008
+54,"McCain, John S",Vermont,7991.8099999999995,2008
+55,"McCain, John S",Washington,200601.34,2008
+56,"McCain, John S",Wisconsin,986316.4,2008
+57,"McCain, John S",West Virginia,45468.42,2008
+58,"McCain, John S",Wyoming,4573.6,2008
+66,"Obama, Barack",Alaska,92916.02,2008
+67,"Obama, Barack",Alabama,2648177.33,2008
+68,"Obama, Barack",Arkansas,110195.2,2008
+70,"Obama, Barack",Arizona,1979372.1,2008
+74,"Obama, Barack",California,26787699.24,2008
+77,"Obama, Barack",Colorado,7642991.89,2008
+78,"Obama, Barack",Connecticut,482765.63,2008
+79,"Obama, Barack",District of Columbia,23241779.31,2008
+80,"Obama, Barack",Delaware,407484.82,2008
+82,"Obama, Barack",Florida,9088254.3,2008
+84,"Obama, Barack",Georgia,3966333.88,2008
+88,"Obama, Barack",Hawaii,182047.87,2008
+90,"Obama, Barack",Iowa,6052118.09,2008
+91,"Obama, Barack",Idaho,92883.54,2008
+93,"Obama, Barack",Illinois,70774196.87,2008
+94,"Obama, Barack",Indiana,1771112.43,2008
+100,"Obama, Barack",Kansas,327624.61,2008
+101,"Obama, Barack",Kentucky,460218.74,2008
+102,"Obama, Barack",Louisiana,1040101.92,2008
+104,"Obama, Barack",Massachusetts,309575567.7,2008
+106,"Obama, Barack",Maryland,11124092.7,2008
+107,"Obama, Barack",Maine,321886.43,2008
+108,"Obama, Barack",Michigan,1932015.99,2008
+109,"Obama, Barack",Minnesota,9742488.84,2008
+110,"Obama, Barack",Missouri,52085157.32,2008
+111,"Obama, Barack",Mississippi,236484.01,2008
+112,"Obama, Barack",Montana,613676.58,2008
+114,"Obama, Barack",North Carolina,2860516.87,2008
+115,"Obama, Barack",North Dakota,26540.63,2008
+116,"Obama, Barack",Nebraska,747015.42,2008
+117,"Obama, Barack",New Hampshire,2835053.53,2008
+118,"Obama, Barack",New Jersey,2378690.9,2008
+119,"Obama, Barack",New Mexico,565581.69,2008
+120,"Obama, Barack",Nevada,4261806.62,2008
+121,"Obama, Barack",New York,10555919.55,2008
+122,"Obama, Barack",Ohio,15254355.52,2008
+123,"Obama, Barack",Oklahoma,796953.82,2008
+125,"Obama, Barack",Oregon,1026685.57,2008
+126,"Obama, Barack",Pennsylvania,68442381.36,2008
+128,"Obama, Barack",Rhode Island,222622.55,2008
+130,"Obama, Barack",South Carolina,2974045.44,2008
+131,"Obama, Barack",South Dakota,395801.91,2008
+134,"Obama, Barack",Tennessee,795415.09,2008
+136,"Obama, Barack",Texas,5394619.88,2008
+138,"Obama, Barack",Utah,458870.85,2008
+139,"Obama, Barack",Virginia,9708353.57,2008
+141,"Obama, Barack",Vermont,145833.49,2008
+143,"Obama, Barack",Washington,3428183.32,2008
+144,"Obama, Barack",Wisconsin,25559925.73,2008
+145,"Obama, Barack",West Virginia,217876.82,2008
+146,"Obama, Barack",Wyoming,86140.25,2008
+0,"Obama, Barack",Alaska,29378.6,2012
+1,"Obama, Barack",Alabama,167152.12,2012
+2,"Obama, Barack",Arkansas,151854.16,2012
+3,"Obama, Barack",Arizona,2155182.3,2012
+5,"Obama, Barack",California,22821582.45,2012
+6,"Obama, Barack",Colorado,4834439.14,2012
+7,"Obama, Barack",Connecticut,138050.36,2012
+8,"Obama, Barack",District of Columbia,496601993.78,2012
+9,"Obama, Barack",Delaware,86186.16,2012
+10,"Obama, Barack",Florida,6524721.99,2012
+11,"Obama, Barack",Georgia,1756208.4,2012
+13,"Obama, Barack",Hawaii,65051.61,2012
+14,"Obama, Barack",Iowa,3223501.48,2012
+15,"Obama, Barack",Idaho,68487.6,2012
+16,"Obama, Barack",Illinois,60073114.71,2012
+17,"Obama, Barack",Indiana,262018.92,2012
+19,"Obama, Barack",Kansas,88819.9,2012
+20,"Obama, Barack",Kentucky,67142.18,2012
+21,"Obama, Barack",Louisiana,179877.23,2012
+22,"Obama, Barack",Massachusetts,5064283.72,2012
+23,"Obama, Barack",Maryland,3354372.4899999998,2012
+24,"Obama, Barack",Maine,129775.96,2012
+26,"Obama, Barack",Michigan,862632.02,2012
+27,"Obama, Barack",Minnesota,1291099.6,2012
+28,"Obama, Barack",Missouri,13242984.12,2012
+29,"Obama, Barack",Mississippi,51760.36,2012
+30,"Obama, Barack",Montana,65980.92,2012
+32,"Obama, Barack",North Carolina,1724649.44,2012
+33,"Obama, Barack",North Dakota,34902.94,2012
+34,"Obama, Barack",Nebraska,424792.01,2012
+35,"Obama, Barack",New Hampshire,610323.93,2012
+36,"Obama, Barack",New Jersey,880235.8,2012
+37,"Obama, Barack",New Mexico,291690.64,2012
+39,"Obama, Barack",Nevada,1421950.06,2012
+40,"Obama, Barack",New York,6604421.48,2012
+41,"Obama, Barack",Ohio,4658679.86,2012
+42,"Obama, Barack",Oklahoma,728803.54,2012
+44,"Obama, Barack",Oregon,181087.24,2012
+45,"Obama, Barack",Pennsylvania,864628.86,2012
+48,"Obama, Barack",Rhode Island,2100650.44,2012
+49,"Obama, Barack",South Carolina,344508.73,2012
+50,"Obama, Barack",South Dakota,20792.31,2012
+51,"Obama, Barack",Tennessee,256819.39,2012
+52,"Obama, Barack",Texas,6747983.65,2012
+53,"Obama, Barack",Utah,156762.29,2012
+54,"Obama, Barack",Virginia,6240559.93,2012
+55,"Obama, Barack",Vermont,70355.06,2012
+56,"Obama, Barack",Washington,5300793.64,2012
+57,"Obama, Barack",Wisconsin,31451578.78,2012
+58,"Obama, Barack",West Virginia,9137.289999999999,2012
+59,"Obama, Barack",Wyoming,58940.7,2012
+60,"Romney, Mitt",Alaska,17502.579999999998,2012
+61,"Romney, Mitt",Alabama,54322.86,2012
+62,"Romney, Mitt",Arkansas,43612.05,2012
+63,"Romney, Mitt",Arizona,1379368.76,2012
+65,"Romney, Mitt",California,9326994.34,2012
+66,"Romney, Mitt",Colorado,496769.77999999997,2012
+67,"Romney, Mitt",Connecticut,521099.23,2012
+69,"Romney, Mitt",District of Columbia,1898725.55,2012
+70,"Romney, Mitt",Delaware,11012.19,2012
+71,"Romney, Mitt",Florida,12458401.96,2012
+72,"Romney, Mitt",Georgia,3121293.86,2012
+73,"Romney, Mitt",Hawaii,6249.5,2012
+74,"Romney, Mitt",Iowa,3235331.65,2012
+75,"Romney, Mitt",Idaho,54566.95,2012
+76,"Romney, Mitt",Illinois,3460487.02,2012
+77,"Romney, Mitt",Indiana,73369.21,2012
+78,"Romney, Mitt",Kansas,12062.34,2012
+79,"Romney, Mitt",Kentucky,222339.17,2012
+80,"Romney, Mitt",Louisiana,130499.87,2012
+81,"Romney, Mitt",Massachusetts,277235156.65,2012
+82,"Romney, Mitt",Maryland,3308407.13,2012
+83,"Romney, Mitt",Maine,21383.13,2012
+84,"Romney, Mitt",Michigan,718190.29,2012
+85,"Romney, Mitt",Minnesota,20441897.509999998,2012
+86,"Romney, Mitt",Missouri,14972092.15,2012
+87,"Romney, Mitt",Mississippi,16764.28,2012
+88,"Romney, Mitt",Montana,18237.87,2012
+90,"Romney, Mitt",North Carolina,257551.6,2012
+91,"Romney, Mitt",North Dakota,2113.04,2012
+92,"Romney, Mitt",Nebraska,36092.65,2012
+93,"Romney, Mitt",New Hampshire,44012998.51,2012
+94,"Romney, Mitt",New Jersey,2442734.73,2012
+95,"Romney, Mitt",New Mexico,599236.16,2012
+96,"Romney, Mitt",Nevada,1101001.04,2012
+97,"Romney, Mitt",New York,3200686.16,2012
+98,"Romney, Mitt",Ohio,1701169.22,2012
+99,"Romney, Mitt",Oklahoma,52413.31,2012
+100,"Romney, Mitt",Oregon,30921.22,2012
+101,"Romney, Mitt",Pennsylvania,2273804.15,2012
+104,"Romney, Mitt",Rhode Island,65295.63,2012
+105,"Romney, Mitt",South Carolina,446596.03,2012
+106,"Romney, Mitt",South Dakota,8491.45,2012
+108,"Romney, Mitt",Tennessee,2132452.87,2012
+109,"Romney, Mitt",Texas,6500932.84,2012
+110,"Romney, Mitt",Utah,452924.0,2012
+111,"Romney, Mitt",Virginia,37744218.72,2012
+112,"Romney, Mitt",Vermont,21691.72,2012
+113,"Romney, Mitt",Washington,789237.24,2012
+114,"Romney, Mitt",Wisconsin,639805.17,2012
+115,"Romney, Mitt",West Virginia,4828.7699999999995,2012
+116,"Romney, Mitt",Wyoming,7499.11,2012
+0,"Clinton, Hillary Rodham",Alaska,26231.93,2016
+1,"Clinton, Hillary Rodham",Alabama,2593726.8000000003,2016
+2,"Clinton, Hillary Rodham",Arkansas,16330085.39,2016
+3,"Clinton, Hillary Rodham",Arizona,223297.48,2016
+5,"Clinton, Hillary Rodham",California,16484666.13,2016
+6,"Clinton, Hillary Rodham",Colorado,5041103.68,2016
+7,"Clinton, Hillary Rodham",Connecticut,11191768.11,2016
+9,"Clinton, Hillary Rodham",District of Columbia,353040899.81,2016
+10,"Clinton, Hillary Rodham",Delaware,54498.8,2016
+11,"Clinton, Hillary Rodham",Florida,12454571.84,2016
+12,"Clinton, Hillary Rodham",Georgia,2204171.56,2016
+13,"Clinton, Hillary Rodham",Hawaii,50931.01,2016
+14,"Clinton, Hillary Rodham",Iowa,3169482.79,2016
+15,"Clinton, Hillary Rodham",Idaho,27643.04,2016
+16,"Clinton, Hillary Rodham",Illinois,6558355.87,2016
+17,"Clinton, Hillary Rodham",Indiana,174010.59,2016
+18,"Clinton, Hillary Rodham",Kansas,64030.35,2016
+19,"Clinton, Hillary Rodham",Kentucky,116904.97,2016
+20,"Clinton, Hillary Rodham",Louisiana,67583.02,2016
+22,"Clinton, Hillary Rodham",Massachusetts,1127157.04,2016
+23,"Clinton, Hillary Rodham",Maryland,1825508.71,2016
+24,"Clinton, Hillary Rodham",Maine,90613.08,2016
+25,"Clinton, Hillary Rodham",Michigan,551030.98,2016
+26,"Clinton, Hillary Rodham",Minnesota,674479.07,2016
+27,"Clinton, Hillary Rodham",Missouri,1028793.49,2016
+29,"Clinton, Hillary Rodham",Mississippi,85322.24,2016
+30,"Clinton, Hillary Rodham",Montana,15451.7,2016
+31,"Clinton, Hillary Rodham",North Carolina,535327.51,2016
+32,"Clinton, Hillary Rodham",North Dakota,5316.67,2016
+33,"Clinton, Hillary Rodham",Nebraska,75504.65,2016
+34,"Clinton, Hillary Rodham",New Hampshire,771982.37,2016
+35,"Clinton, Hillary Rodham",New Jersey,30527066.51,2016
+36,"Clinton, Hillary Rodham",New Mexico,55245.8,2016
+37,"Clinton, Hillary Rodham",Nevada,1847185.99,2016
+38,"Clinton, Hillary Rodham",New York,78235566.89,2016
+39,"Clinton, Hillary Rodham",Ohio,408732.27,2016
+40,"Clinton, Hillary Rodham",Oklahoma,232882.52,2016
+42,"Clinton, Hillary Rodham",Oregon,132120.41,2016
+43,"Clinton, Hillary Rodham",Pennsylvania,3550814.99,2016
+45,"Clinton, Hillary Rodham",Rhode Island,3491279.92,2016
+46,"Clinton, Hillary Rodham",South Carolina,761016.19,2016
+47,"Clinton, Hillary Rodham",South Dakota,29605.07,2016
+48,"Clinton, Hillary Rodham",Tennessee,402672.45,2016
+49,"Clinton, Hillary Rodham",Texas,5245322.74,2016
+50,"Clinton, Hillary Rodham",Utah,663167.17,2016
+51,"Clinton, Hillary Rodham",Virginia,7707699.38,2016
+53,"Clinton, Hillary Rodham",Vermont,30345.11,2016
+54,"Clinton, Hillary Rodham",Washington,8416194.62,2016
+55,"Clinton, Hillary Rodham",Wisconsin,215077.77,2016
+56,"Clinton, Hillary Rodham",West Virginia,19930.38,2016
+57,"Clinton, Hillary Rodham",Wyoming,32859.22,2016
+58,"Trump, Donald J.",Alaska,20244.87,2016
+59,"Trump, Donald J.",Alabama,480333.44,2016
+60,"Trump, Donald J.",Arkansas,170702.77,2016
+61,"Trump, Donald J.",Arizona,3390083.23,2016
+62,"Trump, Donald J.",California,9120311.4,2016
+63,"Trump, Donald J.",Colorado,2821458.1,2016
+64,"Trump, Donald J.",Connecticut,1130803.43,2016
+65,"Trump, Donald J.",District of Columbia,7095697.02,2016
+66,"Trump, Donald J.",Delaware,277087.08999999997,2016
+67,"Trump, Donald J.",Florida,14985463.3,2016
+68,"Trump, Donald J.",Georgia,2806733.65,2016
+69,"Trump, Donald J.",Hawaii,15242.75,2016
+70,"Trump, Donald J.",Iowa,2642951.56,2016
+71,"Trump, Donald J.",Idaho,50818.39,2016
+72,"Trump, Donald J.",Illinois,1345820.6199999999,2016
+73,"Trump, Donald J.",Indiana,1348388.66,2016
+74,"Trump, Donald J.",Kansas,579340.71,2016
+75,"Trump, Donald J.",Kentucky,857462.26,2016
+76,"Trump, Donald J.",Louisiana,17121587.25,2016
+77,"Trump, Donald J.",Massachusetts,2767791.09,2016
+78,"Trump, Donald J.",Maryland,467283.97000000003,2016
+79,"Trump, Donald J.",Maine,116729.71,2016
+80,"Trump, Donald J.",Michigan,869749.73,2016
+81,"Trump, Donald J.",Minnesota,91759.46,2016
+82,"Trump, Donald J.",Missouri,9522826.14,2016
+83,"Trump, Donald J.",Mississippi,380844.94,2016
+84,"Trump, Donald J.",Montana,58173.08,2016
+85,"Trump, Donald J.",North Carolina,1435016.94,2016
+86,"Trump, Donald J.",North Dakota,15350.0,2016
+87,"Trump, Donald J.",Nebraska,173529.48,2016
+88,"Trump, Donald J.",New Hampshire,11576884.33,2016
+89,"Trump, Donald J.",New Jersey,19253807.78,2016
+90,"Trump, Donald J.",New Mexico,183176.28,2016
+91,"Trump, Donald J.",Nevada,1132280.1300000001,2016
+92,"Trump, Donald J.",New York,26845432.580000002,2016
+93,"Trump, Donald J.",Ohio,4373003.42,2016
+94,"Trump, Donald J.",Oklahoma,445094.22,2016
+95,"Trump, Donald J.",Oregon,242283.58,2016
+96,"Trump, Donald J.",Pennsylvania,1586013.35,2016
+98,"Trump, Donald J.",Rhode Island,102694.64,2016
+99,"Trump, Donald J.",South Carolina,1441468.58,2016
+100,"Trump, Donald J.",South Dakota,19498.55,2016
+101,"Trump, Donald J.",Tennessee,992710.9400000001,2016
+102,"Trump, Donald J.",Texas,97271455.01,2016
+103,"Trump, Donald J.",Utah,399495.17,2016
+104,"Trump, Donald J.",Virginia,110657185.24,2016
+106,"Trump, Donald J.",Vermont,81467.59,2016
+107,"Trump, Donald J.",Washington,1087024.67,2016
+108,"Trump, Donald J.",Wisconsin,964820.58,2016
+109,"Trump, Donald J.",West Virginia,91403.33,2016
+110,"Trump, Donald J.",Wyoming,150833.0,2016
+0,"Biden, Joseph R Jr",Alaska,15301.5,2020
+1,"Biden, Joseph R Jr",Alabama,1658810.99,2020
+2,"Biden, Joseph R Jr",Arkansas,216567.06,2020
+4,"Biden, Joseph R Jr",Arizona,668031.85,2020
+5,"Biden, Joseph R Jr",California,66818375.85,2020
+6,"Biden, Joseph R Jr",Colorado,668041.28,2020
+7,"Biden, Joseph R Jr",Connecticut,430018.57,2020
+8,"Biden, Joseph R Jr",District of Columbia,263845275.51,2020
+9,"Biden, Joseph R Jr",Delaware,2469029.93,2020
+10,"Biden, Joseph R Jr",Florida,4321911.25,2020
+11,"Biden, Joseph R Jr",Georgia,449489624.19,2020
+12,"Biden, Joseph R Jr",Hawaii,5046.73,2020
+13,"Biden, Joseph R Jr",Iowa,7531029.79,2020
+14,"Biden, Joseph R Jr",Idaho,17302.51,2020
+15,"Biden, Joseph R Jr",Illinois,6854206.24,2020
+16,"Biden, Joseph R Jr",Indiana,958746.14,2020
+17,"Biden, Joseph R Jr",Kansas,15300.0,2020
+18,"Biden, Joseph R Jr",Kentucky,14833.32,2020
+19,"Biden, Joseph R Jr",Louisiana,420475.33,2020
+20,"Biden, Joseph R Jr",Massachusetts,30291335.54,2020
+21,"Biden, Joseph R Jr",Maryland,3017389.27,2020
+22,"Biden, Joseph R Jr",Maine,254401.09,2020
+23,"Biden, Joseph R Jr",Michigan,1037411.78,2020
+24,"Biden, Joseph R Jr",Minnesota,464192.0,2020
+25,"Biden, Joseph R Jr",Missouri,249538.34,2020
+26,"Biden, Joseph R Jr",Mississippi,12207.25,2020
+27,"Biden, Joseph R Jr",Montana,67750.93,2020
+28,"Biden, Joseph R Jr",North Carolina,1289090.56,2020
+29,"Biden, Joseph R Jr",North Dakota,2969.5,2020
+30,"Biden, Joseph R Jr",Nebraska,19182276.14,2020
+31,"Biden, Joseph R Jr",New Hampshire,1441845.51,2020
+32,"Biden, Joseph R Jr",New Jersey,1998474.14,2020
+33,"Biden, Joseph R Jr",New Mexico,12625.88,2020
+34,"Biden, Joseph R Jr",Nevada,2049630.42,2020
+35,"Biden, Joseph R Jr",New York,80594168.68,2020
+36,"Biden, Joseph R Jr",Ohio,778000.66,2020
+37,"Biden, Joseph R Jr",Oklahoma,663997.45,2020
+38,"Biden, Joseph R Jr",Oregon,463166.73,2020
+39,"Biden, Joseph R Jr",Pennsylvania,45826922.24,2020
+41,"Biden, Joseph R Jr",Rhode Island,2090523.53,2020
+42,"Biden, Joseph R Jr",South Carolina,1002231.01,2020
+43,"Biden, Joseph R Jr",South Dakota,2557.33,2020
+44,"Biden, Joseph R Jr",Tennessee,1038701.46,2020
+45,"Biden, Joseph R Jr",Texas,26176682.5,2020
+46,"Biden, Joseph R Jr",Utah,274744.33,2020
+47,"Biden, Joseph R Jr",Virginia,26775673.4,2020
+48,"Biden, Joseph R Jr",Vermont,3704.4399999999996,2020
+49,"Biden, Joseph R Jr",Washington,3130644.34,2020
+50,"Biden, Joseph R Jr",Wisconsin,1650488.79,2020
+51,"Biden, Joseph R Jr",West Virginia,2500.0,2020
+52,"Biden, Joseph R Jr",Wyoming,2500.0,2020
+54,"Trump, Donald J.",Alaska,594.67,2020
+55,"Trump, Donald J.",Alabama,147480.69,2020
+56,"Trump, Donald J.",Arkansas,34715.47,2020
+57,"Trump, Donald J.",Arizona,2195320.45,2020
+58,"Trump, Donald J.",California,10973015.67,2020
+59,"Trump, Donald J.",Colorado,226240.09,2020
+60,"Trump, Donald J.",Connecticut,642718.96,2020
+61,"Trump, Donald J.",District of Columbia,29514693.56,2020
+62,"Trump, Donald J.",Delaware,985946.13,2020
+63,"Trump, Donald J.",Florida,14043506.3,2020
+64,"Trump, Donald J.",Georgia,4369447.65,2020
+65,"Trump, Donald J.",Hawaii,10000.0,2020
+66,"Trump, Donald J.",Iowa,1324572.38,2020
+67,"Trump, Donald J.",Idaho,104137.84999999999,2020
+68,"Trump, Donald J.",Illinois,2552951.31,2020
+69,"Trump, Donald J.",Indiana,457027.13,2020
+70,"Trump, Donald J.",Kansas,86660.31,2020
+71,"Trump, Donald J.",Kentucky,247978.62,2020
+72,"Trump, Donald J.",Louisiana,16797493.67,2020
+73,"Trump, Donald J.",Massachusetts,9229807.22,2020
+74,"Trump, Donald J.",Maryland,2121216.23,2020
+75,"Trump, Donald J.",Maine,26738.76,2020
+76,"Trump, Donald J.",Michigan,730124.42,2020
+77,"Trump, Donald J.",Minnesota,2710405.18,2020
+78,"Trump, Donald J.",Missouri,1236800.68,2020
+80,"Trump, Donald J.",Mississippi,305215.42,2020
+81,"Trump, Donald J.",Montana,405036.77999999997,2020
+82,"Trump, Donald J.",North Carolina,1004485.67,2020
+83,"Trump, Donald J.",North Dakota,80168.41,2020
+84,"Trump, Donald J.",Nebraska,55700.03,2020
+85,"Trump, Donald J.",New Hampshire,12463179.25,2020
+86,"Trump, Donald J.",New Jersey,14040226.97,2020
+87,"Trump, Donald J.",New Mexico,25668.57,2020
+88,"Trump, Donald J.",Nevada,928312.35,2020
+89,"Trump, Donald J.",New York,47304142.05,2020
+90,"Trump, Donald J.",Ohio,3582451.12,2020
+91,"Trump, Donald J.",Oklahoma,708437.8099999999,2020
+92,"Trump, Donald J.",Oregon,10902.78,2020
+93,"Trump, Donald J.",Pennsylvania,9090866.88,2020
+94,"Trump, Donald J.",Rhode Island,16443.84,2020
+95,"Trump, Donald J.",South Carolina,1753872.06,2020
+96,"Trump, Donald J.",South Dakota,212.59,2020
+97,"Trump, Donald J.",Tennessee,2203093.29,2020
+98,"Trump, Donald J.",Texas,22257814.33,2020
+99,"Trump, Donald J.",Utah,497585.52,2020
+100,"Trump, Donald J.",Virginia,555712208.55,2020
+101,"Trump, Donald J.",Vermont,2300.0,2020
+102,"Trump, Donald J.",Washington,990269.5,2020
+103,"Trump, Donald J.",Wisconsin,2937454.76,2020
+104,"Trump, Donald J.",West Virginia,154823.03999999998,2020
+105,"Trump, Donald J.",Wyoming,29361.84,2020
