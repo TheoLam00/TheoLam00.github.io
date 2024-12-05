@@ -29,7 +29,7 @@
     <br>
     <section>
         <div class="chart-description">
-            <h2>Section 1: A basic chart examples</h2>
+            <h2>Section 1: Introduction</h2>
             <h3 class="small">
                 This page records my learning progress on coding a website and make graphs with live data using <a href="https://vega.github.io/vega-lite">Vega-Lite</a>.
             </h3>
@@ -163,6 +163,7 @@
         <figure id="unemployment" class="graph"></figure><br>
         <figure id="unemDem" class="graph"></figure><br>
         <figure id="employee" class="graph"></figure>
+        <figure id="parti" class="graph"></figure>
         <div>
             <h3>Reference</h3>
             <p><a href="https://dataverse.harvard.edu/file.xhtml?fileId=7241480">MIT Election Data and Science Lab, 2017, "U.S. President 1976–2020", https://doi.org/10.7910/DVN/42MVDX, Harvard Dataverse, V8, UNF:6:F0opd1IRbeYI9QyVfzglUw== [fileUNF]</a></p>
@@ -299,8 +300,10 @@
         vegaEmbed('#unemployment',unemployment);
         let unemDem = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/dem%26unem.json";
         vegaEmbed('#unemDem',unemDem);
-        let employees = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/cbp/industryWageVote.json";
+        let wage = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/cbp/industryWageVote.json";
+        let parti = "https://raw.githubusercontent.com/TheoLam00/TheoLam00.github.io/refs/heads/main/project/cbp/industryPartiVote.json";
         vegaEmbed('#employee',employees);
+        vegaEmbed('#parti',parti);
     </script>
 
 </body>
