@@ -20,23 +20,30 @@
         "step": 4,
         "name": "Year:"
       }
-    }
+    },
+    {"name": "Swing", "value": true, "bind": {"input": "checkbox"}}
   ],
   "transform": [
-    {"calculate": "abs(0.5-datum.demRatio)","as": "swingIndex"},
+    {"calculate": "abs(0.5-datum.demRatio)", "as": "swingIndex"},
     {"calculate": "toNumber(yearSelector)", "as": "yearS"},
     {"filter": "datum.yearS == datum.year"},
-    {"filter":"datum.swingIndex<0.4"}
+    {"filter": "datum.swingIndex<0.4"},
+    {"calculate": "Swing?datum.swingIndex:datum.demRatio", "as": "voting"}
   ],
   "mark": "point",
   "encoding": {
-    "x": {"field": "swingIndex", "type": "quantitative"},
+    "x": {"field": "voting", "type": "quantitative"},
     "y": {
       "field": "spending",
       "type": "quantitative",
       "scale": {"type": "log", "base": 10}
     },
-    "color":{"field":"party"},
-    "size":{"field":"vote","legend":null}
+    "color": {"field": "party"},
+    "size": {"field": "vote", "legend": null},
+    "tooltip":[
+      {"field":"state"},
+      {"field":"spending"},
+      {"field":"vote","title":"Electoral College Vote"}
+    ]
   }
 }
