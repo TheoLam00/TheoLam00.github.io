@@ -46,14 +46,16 @@
     {"calculate": "select.naics[0]", "as": "naicsS"},
     {"filter": "datum.naicsS==datum.naics"},
     {"calculate": "abs(0.5-datum.demRatio)","as": "swingIndex"},
-    {"calculate": "datum.annual_payroll/datum.num_employees","as": "rate"}
+    {"calculate": "datum.annual_payroll/datum.num_employees","as": "wage"},
+    {"calculate": "datum.total_pop*1000","as": "total_pop"},
+    {"calculate": "datum.num_employees/datum.total_pop","as": "parti"}
   ],
   "layer": [
     {
       "mark": "point",
       "encoding": {
         "x": {"field": "demRatio", "type": "quantitative"},
-        "y": {"field": "rate", "type": "quantitative"},
+        "y": {"field": "parti", "type": "quantitative"}
       }
     }
   ]
