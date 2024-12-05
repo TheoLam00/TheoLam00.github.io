@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Industry and Voting",
+    "text": "Industry Wage and Voting",
     "subtitle": ["Source: United States Census Bureau"]
   },
   "data": {
@@ -45,17 +45,17 @@
   "transform": [
     {"calculate": "select.naics[0]", "as": "naicsS"},
     {"filter": "datum.naicsS==datum.naics"},
-    {"calculate": "abs(0.5-datum.demRatio)","as": "swingIndex"},
-    {"calculate": "datum.annual_payroll/datum.num_employees","as": "wage"},
-    {"calculate": "datum.total_pop*1000","as": "total_pop"},
-    {"calculate": "datum.num_employees/datum.total_pop","as": "parti"}
+    {"calculate": "abs(0.5-datum.demRatio)", "as": "swingIndex"},
+    {"calculate": "datum.annual_payroll/datum.num_employees", "as": "wage"},
+    {"calculate": "datum.total_pop*1000", "as": "total_pop"},
+    {"calculate": "datum.num_employees/datum.total_pop", "as": "parti"}
   ],
   "layer": [
     {
       "mark": "point",
       "encoding": {
         "x": {"field": "demRatio", "type": "quantitative"},
-        "y": {"field": "parti", "type": "quantitative"}
+        "y": {"field": "wage", "type": "quantitative"}
       }
     }
   ]
