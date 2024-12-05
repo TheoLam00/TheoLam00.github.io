@@ -39,11 +39,11 @@
       "scale": {"type": "log", "base": 10}
     },
     "color": {"field": "party"},
-    "size": {"field": "vote", "legend": null},
-    "tooltip":[
-      {"field":"state"},
-      {"field":"spending"},
-      {"field":"vote","title":"Electoral College Vote"}
+    "size": {"field": "vote","type": "quantitative"},
+    "tooltip": [
+      {"field": "state"},
+      {"field": "spending"},
+      {"field": "vote", "title": "Electoral College Vote"}
     ]
   }
 }
