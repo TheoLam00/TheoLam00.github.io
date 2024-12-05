@@ -33,12 +33,12 @@
             <h3 class="small">
                 This page records my learning progress on coding a website and make graphs with live data using <a href="https://vega.github.io/vega-lite">Vega-Lite</a>.
             </h3>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                We've organised the page into sections, with each section containing a chart, title and a description. Here, we can describe the chart and give some context.
-                As a first example, we're using a basic chart from our repo.
-            </p>
+            <h3 class="small"> 
+                For more codes on how the graphs are made or data cleaning, please go to my <a href="https://www.github.com/TheoLam00/TheoLam00.github.io">github repository</a>.
+            </h3>
         </div>
         <figure id="Example"></figure>
+        <p>This is an example on displaying a chart with vega lite.</p>
     </section>
 
     <section id = "CC" class="colorCC">
@@ -170,18 +170,25 @@
 
         <figure id="spending" class="graph"></figure><br>
 
-        <p>Data from <a href="https://www.fec.gov/data/candidates/president/presidential-map/">Federal Election Commision</a></p>
+        <p>Data from <a href="https://www.fec.gov/data/candidates/president/presidential-map/">Federal Election Commision</a> is scraped by python. Requesting the zip file and filter the two candidate and summing all the expenses by state. It shows the spending on campaign of each candidate.
+        Which increace exponentially with the swingIndex. Voters in the swing state are much more considered by the candidate. Spending is also higher the more Electoral vote (Bubble size) the state got.
+        The swing checkbox is choosing the plot against percentage of Democrats votes and swing (how close the result differ to 50%).</p>
 
         <figure id="unemployment" class="graph"></figure><br>
 
         <p>The data is accessed by the Fred api using python. Using a loop to get and merge the data of different states. I originally decide to plot unemployment against swing index and turnout rate.
             But the data shows no obvious relationship in the graph. Different from <a href="https://www.ox.ac.uk/news/2021-06-28-previous-unemployment-influences-voter-turnout-says-oxford-study-0">findings</a> that unemployment will affect turnout rate.
-
+            Research of <a href="https://www.nber.org/papers/w24425">swing state theory</a> finds that swing state benifits from traiffs. I also looked for taxrate, to see if there is similar trends. But also failed to find significant trends. Those graphs were ploted by seaborn in google colab notebook on my github.
+            So I changed the project direction from swing state to what makes a Democrats or Republicant voter.
         </p>
-
         <figure id="unemDem" class="graph"></figure><br>
+        <p>After scraping and combining the data from fred and MIT, the result shows unemployment slightly favour the Democratic party's candidate.</p>
         <figure id="employee" class="graph"></figure><br>
         <figure id="parti" class="graph"></figure><br>
+        <p>These two graphs were plotted by cleaning <a href="https://www.census.gov/data/datasets/2020/econ/cbp/2020-cbp.html">data</a> by <a href="https://github.com/TheoLam00/TheoLam00.github.io/blob/main/project/cbp/CBP.ipynb">python</a>.</p>
+        <p><b>Conclusion:</b> From the last three graphs, a higher unemployment rate benifits the Democratics party. Although the data only shows the overall votes of the state, most industries with higher wages tends to have higher overall vote on Democrats.
+        And some industries such as education, science and technology sector also benefits the Democratics party, as the participation rate increase votes increase. Industries such as utilities and construction benifits Republicants.
+        This also explain why some states are 'loyal' to Democrats or Republicants. The industry structure of a state is hard to change in short run. As the party benifits their industry they will continue to vote to that party. Even if they were less considered in the policy as the swing states.</p>
         <div>
             <h3>Reference</h3>
             <p><a href="https://dataverse.harvard.edu/file.xhtml?fileId=7241480">MIT Election Data and Science Lab, 2017, "U.S. President 1976–2020", https://doi.org/10.7910/DVN/42MVDX, Harvard Dataverse, V8, UNF:6:F0opd1IRbeYI9QyVfzglUw== [fileUNF]</a></p>
