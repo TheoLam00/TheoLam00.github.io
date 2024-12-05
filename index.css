@@ -14,6 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
+  padding: 10px;
 }
 
 /* We want the headings to be a little bigger than the paragraph text */
@@ -33,6 +34,8 @@ h2 {
 p {
   margin-bottom: 1em;
   font-weight: 300;
+  width: 90%;
+  padding: 10px;
 }
 
 section {
@@ -45,7 +48,7 @@ section {
 
 /* Links */
 a {
-  color: var(--a);
+  color: #065f46;
   text-decoration: none;
 }
 
@@ -186,7 +189,6 @@ img {
 .colorCC{
   --bg-main: #F4ECD6;
   --text:#333;
-  --a:#065f46;
   --a-hover:rgb(48, 3, 132);
   --bg-box:#B8B08D;
   --bg-graph:#f1f0f0;
