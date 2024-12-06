@@ -152,7 +152,11 @@
     <section id = "Project" class="colorProj">
         <h2>Section 3: Data Profolio</h2>
         <h1 class="big">Voting Behaviour in US: Democrats or Republicant</h1>
-        <p><b>Aim: </b>The US presidential election is voted by the Electoral College. All representatives in the state will vote for the winner of the popular vote in that state, no matter how close the votes are. This makes some states 'swing' because it is uncertain which candidate the votes will go to.</p>
+
+        <!--Aim-->
+        <p><b>Aim:</b><br>The US presidential election is voted by the Electoral College. All representatives in the state will vote for the winner of the popular vote in that state, no matter how close the votes are. 
+            This makes some states 'swing' because it is uncertain which candidate the votes will go to. In this project, I will use visuallization to show how Employment and industry of a state affect the voters to tends voting to a particular party.
+            Although only around 20% of the electoral college votes are in the swing state, this still heavily affect the result of the election as the sum of electoral votes of each parties are nearly tied in other states.</p>
         
         <figure id="pVote" class="graph"></figure><br>
 
@@ -161,12 +165,12 @@
         
         <figure id="swing" class="graph"></figure><br>
 
-        <p>This graph shows the swing state which votes were differ by a few percent. So the results in these state usually determine the next president.</p><br>
+        <p>This graph shows the swing state which votes were differ by a few percent. The different parameter allow user to choose the different in percentage the candidates got. The different less than the choice will be marked as grey.</p><br>
         
         <figure id="swingVoteRate" class="graph"></figure><br>
 
         <p>Data from <a href="https://www.census.gov/data/tables/time-series/demo/voting-and-registration/voting-historical-time-series.html">United States Census Bureau</a> shows no obvious trends on the graph. Although their vote could make a different, swing state do not have a significantly higher turnout rate.
-        The swing index is the absolute different of vote from 50%, showing how close was the election results.</p>
+        The swing index is the absolute different of vote from 50%, showing how close was the election results. Whch was plotted with the data of voting to Democrat cleaned from MIT</p>
 
         <figure id="spending" class="graph"></figure><br>
 
@@ -176,7 +180,7 @@
 
         <figure id="unemployment" class="graph"></figure><br>
 
-        <p>The data is accessed by the Fred api using python. Using a loop to get and merge the data of different states.</p>
+        <p>The data is accessed by the Fred api using python. Using a loop to get and merge the data of different states. And parameters are add to allow users to choose data from time period and states.</p>
         <figure id="unemDem" class="graph"></figure><br>
         <p>After scraping and combining the data from fred and MIT, the result shows unemployment slightly favour the Democratic party's candidate.</p>
         <figure id="employee" class="graph"></figure><br>
@@ -195,7 +199,8 @@
         <!--Conclusion-->
         <p><b>Conclusion:</b><br>From the last three graphs, a higher unemployment rate benefits the Democratic party. Although the data only shows the overall votes of the state, most industries with higher wages tend to have higher overall votes on Democrats. 
             Some industries such as education, science and technology sectors also benefit the Democratic party, as the participation rate increases votes increase. Industries such as utilities and construction benefit Republicans. This also explains why some states are 'loyal' to Democrats or Republicans. 
-            The industry structure of a state is hard to change in short run. As the party benefits their industry they will continue voting for that party. Even if they were less considered in the policy as the swing states.</p>
+            The industry structure of a state is hard to change in short run. As the party benefits their industry they will continue voting for that party. But this loyalty will cause less considered by the candidates in the campaign as the swing states. 
+            Candidate spends more in campaigning in swing state, which increase exponentially when the state is more swing. And to win more vote, spending is higher in swing states with more Electoral college votes.</p>
         
         <!--Reference-->
         <div>
