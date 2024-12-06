@@ -34,7 +34,8 @@
                 This page records my learning progress on coding a website and make graphs with live data using <a href="https://vega.github.io/vega-lite">Vega-Lite</a>.
             </h3>
             <h3 class="small"> 
-                For more codes on how the graphs are made or data cleaning, please go to my <a href="https://www.github.com/TheoLam00/TheoLam00.github.io">github repository</a>.
+                For more codes on how the graphs are made or data cleaning, please go to my <a href="https://www.github.com/TheoLam00/TheoLam00.github.io">github repository</a>. 
+                The coding Challenges code are in seperated cc files. And the projects graph and data cleaning python are sorted by types eg. <a href="https://github.com/TheoLam00/TheoLam00.github.io/tree/main/project/unem">unemployment is in project/unem/</a>
             </h3>
         </div>
         <figure id="Example"></figure>
@@ -181,11 +182,16 @@
         <figure id="unemployment" class="graph"></figure><br>
 
         <p>The data is accessed by the Fred api using python. Using a loop to get and merge the data of different states. And parameters are add to allow users to choose data from time period and states.</p>
+        
         <figure id="unemDem" class="graph"></figure><br>
-        <p>After scraping and combining the data from fred and MIT, the result shows unemployment slightly favour the Democratic party's candidate.</p>
+        
+        <p>After scraping and combining the data from fred and MIT, the result shows unemployment slightly favour the Democratic party's candidate. A averge of 3 month, 6 month and 1 year unemployment rate before the election is calculated with python pandas to see if a short term or long term higher unemployment will have different impact.</p>
+        
         <figure id="employee" class="graph"></figure><br>
         <figure id="parti" class="graph"></figure><br>
-        <p>These two graphs were plotted by cleaning <a href="https://www.census.gov/data/datasets/2020/econ/cbp/2020-cbp.html">data</a> by <a href="https://github.com/TheoLam00/TheoLam00.github.io/blob/main/project/cbp/CBP.ipynb">python</a>. Showing the participation rate of different industries.</p>
+        
+        <p>These two graphs were plotted by cleaning <a href="https://www.census.gov/data/datasets/2020/econ/cbp/2020-cbp.html">data</a> by <a href="https://github.com/TheoLam00/TheoLam00.github.io/blob/main/project/cbp/CBP.ipynb">python</a>. Showing the participation rate and wage of different industries.
+        The participation rate is calculated by employee in industry over total population. And the wage is calculated by average payroll per employee. These data were accessed with python requests, and cleaned with pandas.</p>
         
         <!--Challenges-->
         <p><b>Challenges:</b><br>I originally decided to plot unemployment against swing index and turnout rate.
