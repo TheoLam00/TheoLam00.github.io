@@ -161,37 +161,36 @@
         
         <figure id="pVote" class="graph"></figure><br>
 
-        <p>Taking data of voting results in every states of the past presidential election from <a href="https://electionlab.mit.edu/data">MIT election data and science lab</a>. After cleaning with python, the graph shows the winner's party of that state.
+        <p>Voting results by states of the past presidential election from <a href="https://electionlab.mit.edu/data">MIT election data and science lab</a> was cleaned and analysised with python, the graph shows the winner's party of that state.
         The 'demRatio' is showing percentage of vote the Democrats candidate get over the total votes of the two most potential candidates.</p><br>
         
         <figure id="swing" class="graph"></figure><br>
 
-        <p>This graph shows the swing state which votes were differ by a few percent. The different parameter allow user to choose the different in percentage the candidates got. The different less than the choice will be marked as grey.</p><br>
+        <p>This graph shows the swing state which votes were differ by a few percent. The different parameter turns states with smaller different between candidates grey.</p><br>
         
         <figure id="swingVoteRate" class="graph"></figure><br>
 
-        <p>Data from <a href="https://www.census.gov/data/tables/time-series/demo/voting-and-registration/voting-historical-time-series.html">United States Census Bureau</a> shows no obvious trends on the graph. Although their vote could make a different, swing state do not have a significantly higher turnout rate.
-        The swing index is the absolute different of vote from 50%, showing how close was the election results. Whch was plotted with the data of voting to Democrat cleaned from MIT</p>
+        <p><a href="https://www.census.gov/data/tables/time-series/demo/voting-and-registration/voting-historical-time-series.html">Data</a> shows no obvious trends on the graph. It is plotted with data cleaned from MIT.
+        The swing index is the absolute different of vote from 50%, showing how close was the election results.</p>
 
         <figure id="spending" class="graph"></figure><br>
 
-        <p>Data from <a href="https://www.fec.gov/data/candidates/president/presidential-map/">Federal Election Commision</a> is scraped by python. Requesting the zip file and filter the two candidate and summing all the expenses by state. It shows the spending on campaign of each candidate.
-        Which increace exponentially with the swingIndex. Voters in the swing state are much more considered by the candidate. Spending is also higher the more Electoral vote (Bubble size) the state got.
-        The swing checkbox is choosing the plot against percentage of Democrats votes and swing (how close the result differ to 50%).</p>
+        <p><a href="https://www.fec.gov/data/candidates/president/presidential-map/">Data</a> shows campaign spending by states of each candidate.
+        Spending is also higher the more Electoral vote (Bubble size) the state got.</p>
 
         <figure id="unemployment" class="graph"></figure><br>
 
-        <p>The data is accessed by the Fred api using python. Using a loop to get and merge the data of different states. And parameters are add to allow users to choose data from time period and states.</p>
+        <p>The data is accessed by the Fred api using python loop to get and merge the data of different states.</p>
         
         <figure id="unemDem" class="graph"></figure><br>
         
-        <p>After scraping and combining the data from fred and MIT, the result shows unemployment slightly favour the Democratic party's candidate. A averge of 3 month, 6 month and 1 year unemployment rate before the election is calculated with python pandas to see if a short term or long term higher unemployment will have different impact.</p>
+        <p>With cleaned data from fred and MIT, shows unemployment slightly favour the Democratic.</p>
         
         <figure id="employee" class="graph"></figure><br>
         <figure id="parti" class="graph"></figure><br>
         
-        <p>These two graphs were plotted by cleaning <a href="https://www.census.gov/data/datasets/2020/econ/cbp/2020-cbp.html">data</a> by <a href="https://github.com/TheoLam00/TheoLam00.github.io/blob/main/project/cbp/CBP.ipynb">python</a>. Showing the participation rate and wage of different industries.
-        The participation rate is calculated by employee in industry over total population. And the wage is calculated by average payroll per employee. These data were accessed with python requests, and cleaned with pandas.</p>
+        <p><a href="https://www.census.gov/data/datasets/2020/econ/cbp/2020-cbp.html">Data</a> cleaned by <a href="https://github.com/TheoLam00/TheoLam00.github.io/blob/main/project/cbp/CBP.ipynb">python</a> shows the participation rate and wage of industries.
+        The participation rate is calculated by employee in industry over total population. And the wage is calculated by average payroll per employee.</p>
         
         <!--Challenges-->
         <p><b>Challenges:</b><br>I originally decided to plot unemployment against swing index and turnout rate.
